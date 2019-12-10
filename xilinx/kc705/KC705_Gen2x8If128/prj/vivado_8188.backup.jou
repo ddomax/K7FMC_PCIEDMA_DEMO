@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed Apr 25 01:03:08 2018
+# Process ID: 8188
+# Current directory: E:/PROGRAM/riffa_2.2.2/source/fpga/xilinx/kc705/KC705_Gen2x8If128/prj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8032 E:\PROGRAM\riffa_2.2.2\source\fpga\xilinx\kc705\KC705_Gen2x8If128\prj\KC705_Gen2x8If128.xpr
+# Log file: E:/PROGRAM/riffa_2.2.2/source/fpga/xilinx/kc705/KC705_Gen2x8If128/prj/vivado.log
+# Journal file: E:/PROGRAM/riffa_2.2.2/source/fpga/xilinx/kc705/KC705_Gen2x8If128/prj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/PROGRAM/riffa_2.2.2/source/fpga/xilinx/kc705/KC705_Gen2x8If128/prj/KC705_Gen2x8If128.xpr
+update_compile_order -fileset sources_1
+launch_runs impl_1
+wait_on_run impl_1
+open_run impl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {LED[3]} {LED[2]} {LED[1]} {LED[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list PCIE_RESET_N]]
+set_property is_loc_fixed false [get_ports [list  {LED[3]} {LED[2]} {LED[1]} {LED[0]}]]
+place_ports {LED[0]} U28
+place_ports {LED[1]} T25
+place_ports {LED[2]} U25
+place_ports {LED[3]} U29
+place_ports PCIE_RESET_N W19
+set_property target_constrs_file E:/PROGRAM/riffa_2.2.2/source/fpga/xilinx/kc705/KC705_Gen2x8If128/constr/KC705_Gen2x8If128.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run impl_1
+launch_runs impl_1
+wait_on_run impl_1
+set_property STEPS.WRITE_BITSTREAM.ARGS.BIN_FILE true [get_runs impl_1]
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server

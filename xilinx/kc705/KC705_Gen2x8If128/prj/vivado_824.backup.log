@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sun May 06 02:12:54 2018
+# Process ID: 824
+# Current directory: F:/Xilinx_FPGA/K7FMC/fpga/xilinx/kc705/KC705_Gen2x8If128/prj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7540 F:\Xilinx_FPGA\K7FMC\fpga\xilinx\kc705\KC705_Gen2x8If128\prj\KC705_Gen2x8If128.xpr
+# Log file: F:/Xilinx_FPGA/K7FMC/fpga/xilinx/kc705/KC705_Gen2x8If128/prj/vivado.log
+# Journal file: F:/Xilinx_FPGA/K7FMC/fpga/xilinx/kc705/KC705_Gen2x8If128/prj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/Xilinx_FPGA/K7FMC/fpga/xilinx/kc705/KC705_Gen2x8If128/prj/KC705_Gen2x8If128.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'F:/Xilinx_FPGA/K7FMC/fpga/xilinx/kc705/KC705_Gen2x8If128/prj/KC705_Gen2x8If128.ip_user_files'.
+WARNING: [filemgmt 56-3] IPStaticSourceDir: Could not find the directory 'F:/Xilinx_FPGA/K7FMC/fpga/xilinx/kc705/KC705_Gen2x8If128/prj/KC705_Gen2x8If128.ip_user_files/ipstatic'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'J:/Xilinx/Vivado/2015.4/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:28 . Memory (MB): peak = 738.047 ; gain = 189.277
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 548 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.4
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [F:/Xilinx_FPGA/K7FMC/fpga/xilinx/kc705/KC705_Gen2x8If128/prj/.Xil/Vivado-824-LYLHW-PC/dcp/KC705_Gen2x8If128_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [F:/Xilinx_FPGA/K7FMC/fpga/xilinx/kc705/KC705_Gen2x8If128/ip/source/PCIeGen2x8If128-PCIE_X0Y0.xdc:122]
+INFO: [Timing 38-2] Deriving generated clocks [F:/Xilinx_FPGA/K7FMC/fpga/xilinx/kc705/KC705_Gen2x8If128/ip/source/PCIeGen2x8If128-PCIE_X0Y0.xdc:122]
+create_generated_clock: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1595.313 ; gain = 536.836
+Finished Parsing XDC File [F:/Xilinx_FPGA/K7FMC/fpga/xilinx/kc705/KC705_Gen2x8If128/prj/.Xil/Vivado-824-LYLHW-PC/dcp/KC705_Gen2x8If128_early.xdc]
+Parsing XDC File [F:/Xilinx_FPGA/K7FMC/fpga/xilinx/kc705/KC705_Gen2x8If128/prj/.Xil/Vivado-824-LYLHW-PC/dcp/KC705_Gen2x8If128.xdc]
+Finished Parsing XDC File [F:/Xilinx_FPGA/K7FMC/fpga/xilinx/kc705/KC705_Gen2x8If128/prj/.Xil/Vivado-824-LYLHW-PC/dcp/KC705_Gen2x8If128.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1631.098 ; gain = 23.902
+Restored from archive | CPU: 3.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1631.098 ; gain = 23.902
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  RAM32M => RAM32M (RAMS32, RAMS32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32): 31 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 1 instances
+
+open_run: Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1754.223 ; gain = 1016.176
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun May 06 02:29:49 2018...

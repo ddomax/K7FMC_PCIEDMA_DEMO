@@ -1,0 +1,169 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed Apr 25 01:03:08 2018
+# Process ID: 8188
+# Current directory: E:/PROGRAM/riffa_2.2.2/source/fpga/xilinx/kc705/KC705_Gen2x8If128/prj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8032 E:\PROGRAM\riffa_2.2.2\source\fpga\xilinx\kc705\KC705_Gen2x8If128\prj\KC705_Gen2x8If128.xpr
+# Log file: E:/PROGRAM/riffa_2.2.2/source/fpga/xilinx/kc705/KC705_Gen2x8If128/prj/vivado.log
+# Journal file: E:/PROGRAM/riffa_2.2.2/source/fpga/xilinx/kc705/KC705_Gen2x8If128/prj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/PROGRAM/riffa_2.2.2/source/fpga/xilinx/kc705/KC705_Gen2x8If128/prj/KC705_Gen2x8If128.xpr
+INFO: [Project 1-313] Project file moved from '/home/drichmond/Research/repositories/git/riffa/fpga/xilinx/kc705/KC705_Gen2x8If128/prj' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'PCIeGen2x8If128_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'impl_1' not found
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'E:/PROGRAM/riffa_2.2.2/source/fpga/xilinx/kc705/KC705_Gen2x8If128/prj/KC705_Gen2x8If128.ip_user_files', nor could it be found using path 'E:/home/drichmond/Research/repositories/git/riffa/fpga/xilinx/kc705/KC705_Gen2x8If128/prj/KC705_Gen2x8If128.ip_user_files'.
+WARNING: [filemgmt 56-2] IPStaticSourceDir: Could not find the directory 'E:/PROGRAM/riffa_2.2.2/source/fpga/xilinx/kc705/KC705_Gen2x8If128/prj/KC705_Gen2x8If128.ip_user_files/ipstatic', nor could it be found using path 'E:/home/drichmond/Research/repositories/git/riffa/fpga/xilinx/kc705/KC705_Gen2x8If128/prj/KC705_Gen2x8If128.ip_user_files/ipstatic'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'J:/Xilinx/Vivado/2015.4/data/ip'.
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 785.742 ; gain = 215.410
+update_compile_order -fileset sources_1
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+can't use floating-point value as operand of "<<"
+can't use floating-point value as operand of "<<"
+can't use floating-point value as operand of "<<"
+launch_runs impl_1
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'PCIeGen2x8If128'...
+[Wed Apr 25 01:06:36 2018] Launched PCIeGen2x8If128_synth_1, synth_1...
+Run output will be captured here:
+PCIeGen2x8If128_synth_1: E:/PROGRAM/riffa_2.2.2/source/fpga/xilinx/kc705/KC705_Gen2x8If128/prj/KC705_Gen2x8If128.runs/PCIeGen2x8If128_synth_1/runme.log
+synth_1: E:/PROGRAM/riffa_2.2.2/source/fpga/xilinx/kc705/KC705_Gen2x8If128/prj/KC705_Gen2x8If128.runs/synth_1/runme.log
+[Wed Apr 25 01:06:36 2018] Launched impl_1...
+Run output will be captured here: E:/PROGRAM/riffa_2.2.2/source/fpga/xilinx/kc705/KC705_Gen2x8If128/prj/KC705_Gen2x8If128.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:07 ; elapsed = 00:00:23 . Memory (MB): peak = 843.145 ; gain = 41.684
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 548 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.4
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/PROGRAM/riffa_2.2.2/source/fpga/xilinx/kc705/KC705_Gen2x8If128/prj/.Xil/Vivado-8188-LYLHW-PC/dcp/KC705_Gen2x8If128_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [E:/PROGRAM/riffa_2.2.2/source/fpga/xilinx/kc705/KC705_Gen2x8If128/ip/source/PCIeGen2x8If128-PCIE_X0Y0.xdc:122]
+INFO: [Timing 38-2] Deriving generated clocks [E:/PROGRAM/riffa_2.2.2/source/fpga/xilinx/kc705/KC705_Gen2x8If128/ip/source/PCIeGen2x8If128-PCIE_X0Y0.xdc:122]
+create_generated_clock: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1684.055 ; gain = 537.109
+Finished Parsing XDC File [E:/PROGRAM/riffa_2.2.2/source/fpga/xilinx/kc705/KC705_Gen2x8If128/prj/.Xil/Vivado-8188-LYLHW-PC/dcp/KC705_Gen2x8If128_early.xdc]
+Parsing XDC File [E:/PROGRAM/riffa_2.2.2/source/fpga/xilinx/kc705/KC705_Gen2x8If128/prj/.Xil/Vivado-8188-LYLHW-PC/dcp/KC705_Gen2x8If128.xdc]
+Finished Parsing XDC File [E:/PROGRAM/riffa_2.2.2/source/fpga/xilinx/kc705/KC705_Gen2x8If128/prj/.Xil/Vivado-8188-LYLHW-PC/dcp/KC705_Gen2x8If128.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1714.793 ; gain = 18.848
+Restored from archive | CPU: 3.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1714.793 ; gain = 18.848
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  RAM32M => RAM32M (RAMS32, RAMS32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32): 31 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 1 instances
+
+open_run: Time (s): cpu = 00:00:36 ; elapsed = 00:00:35 . Memory (MB): peak = 1826.531 ; gain = 940.688
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+can't use floating-point value as operand of "<<"
+can't use floating-point value as operand of "<<"
+can't use floating-point value as operand of "<<"
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+can't use floating-point value as operand of "<<"
+can't use floating-point value as operand of "<<"
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.2-2148] PCIeGen2x8If128: 11 - false 
+can't use floating-point value as operand of "<<"
+can't use floating-point value as operand of "<<"
+can't use floating-point value as operand of "<<"
+set_property IOSTANDARD LVCMOS33 [get_ports [list {LED[3]} {LED[2]} {LED[1]} {LED[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list PCIE_RESET_N]]
+set_property is_loc_fixed false [get_ports [list  {LED[3]} {LED[2]} {LED[1]} {LED[0]}]]
+place_ports {LED[0]} U28
+place_ports {LED[1]} T25
+place_ports {LED[2]} U25
+place_ports {LED[3]} U29
+place_ports PCIE_RESET_N W19
+set_property target_constrs_file E:/PROGRAM/riffa_2.2.2/source/fpga/xilinx/kc705/KC705_Gen2x8If128/constr/KC705_Gen2x8If128.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run impl_1
+launch_runs impl_1
+[Wed Apr 25 02:45:13 2018] Launched impl_1...
+Run output will be captured here: E:/PROGRAM/riffa_2.2.2/source/fpga/xilinx/kc705/KC705_Gen2x8If128/prj/KC705_Gen2x8If128.runs/impl_1/runme.log
+set_property STEPS.WRITE_BITSTREAM.ARGS.BIN_FILE true [get_runs impl_1]
+launch_runs impl_1 -to_step write_bitstream
+[Wed Apr 25 03:11:48 2018] Launched impl_1...
+Run output will be captured here: E:/PROGRAM/riffa_2.2.2/source/fpga/xilinx/kc705/KC705_Gen2x8If128/prj/KC705_Gen2x8If128.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.4
+  **** Build date : Nov 17 2015-18:01:07
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'connect_hw_server' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 25 03:16:23 2018...

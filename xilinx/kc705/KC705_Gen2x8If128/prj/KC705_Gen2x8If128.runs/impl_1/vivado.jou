@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sun Nov 24 10:19:50 2019
+# Process ID: 3052
+# Current directory: D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/prj/KC705_Gen2x8If128.runs/impl_1
+# Command line: vivado.exe -log KC705_Gen2x8If128.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source KC705_Gen2x8If128.tcl -notrace
+# Log file: D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/prj/KC705_Gen2x8If128.runs/impl_1/KC705_Gen2x8If128.vdi
+# Journal file: D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/prj/KC705_Gen2x8If128.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source KC705_Gen2x8If128.tcl -notrace

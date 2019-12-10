@@ -1,0 +1,559 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date             : Sun Nov 24 10:23:41 2019
+| Host             : zhatianyics-PC running 64-bit major release  (build 9200)
+| Command          : report_power -file KC705_Gen2x8If128_power_routed.rpt -pb KC705_Gen2x8If128_power_summary_routed.pb -rpx KC705_Gen2x8If128_power_routed.rpx
+| Design           : KC705_Gen2x8If128
+| Device           : xc7k325tffg900-2
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 3.339        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 3.149        |
+| Device Static (W)        | 0.190        |
+| Effective TJA (C/W)      | 1.8          |
+| Max Ambient (C)          | 79.1         |
+| Junction Temperature (C) | 30.9         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Clocks                   |     0.174 |       11 |       --- |             --- |
+| Slice Logic              |     0.066 |    25703 |       --- |             --- |
+|   LUT as Logic           |     0.056 |     8659 |    203800 |            4.25 |
+|   Register               |     0.006 |    13851 |    407600 |            3.40 |
+|   CARRY4                 |     0.004 |      497 |     50950 |            0.98 |
+|   LUT as Shift Register  |     0.001 |      213 |     64000 |            0.33 |
+|   LUT as Distributed RAM |    <0.001 |       38 |     64000 |            0.06 |
+|   F7/F8 Muxes            |    <0.001 |      111 |    203800 |            0.05 |
+|   Others                 |     0.000 |      536 |       --- |             --- |
+| Signals                  |     0.093 |    20981 |       --- |             --- |
+| Block RAM                |     0.118 |       31 |       445 |            6.97 |
+| MMCM                     |     0.109 |        1 |        10 |           10.00 |
+| I/O                      |     0.000 |        5 |       500 |            1.00 |
+| GTX                      |     2.506 |        8 |        16 |           50.00 |
+| Hard IPs                 |     0.082 |        1 |       --- |             --- |
+|   PCIE                   |     0.082 |        1 |         1 |          100.00 |
+| Static Power             |     0.190 |          |           |                 |
+| Total                    |     3.339 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |     0.907 |       0.819 |      0.088 |
+| Vccaux    |       1.800 |     0.088 |       0.059 |      0.029 |
+| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.009 |       0.006 |      0.003 |
+| MGTAVcc   |       1.000 |     1.280 |       1.274 |      0.005 |
+| MGTAVtt   |       1.200 |     0.759 |       0.754 |      0.005 |
+| MGTVccaux |       1.800 |     0.021 |       0.021 |      0.000 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                     |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                 |                                                                                                            |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                           |                                                                                                            |
+|                             |            |                                                        |                                                                                                            |
+| Overall confidence level    | Low        |                                                        |                                                                                                            |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 1.8                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 3.3                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++---------------------+------------------------------------------------------------------------------------------------+-----------------+
+| Clock               | Domain                                                                                         | Constraint (ns) |
++---------------------+------------------------------------------------------------------------------------------------+-----------------+
+| clk_125mhz_mux_x0y0 | PCIeGen1x8If64_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/CLK_RXUSRCLK    |             4.0 |
+| clk_125mhz_x0y0     | PCIeGen1x8If64_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/clk_125mhz      |             8.0 |
+| clk_250mhz_mux_x0y0 | PCIeGen1x8If64_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/CLK_RXUSRCLK    |             4.0 |
+| clk_250mhz_x0y0     | PCIeGen1x8If64_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/clk_250mhz      |             4.0 |
+| mmcm_fb             | PCIeGen1x8If64_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/mmcm_fb         |            10.0 |
+| pcie_refclk         | pcie_refclk                                                                                    |            10.0 |
+| txoutclk_x0y0       | PCIeGen1x8If64_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gt_wrapper_i/pipe_txoutclk_out |            10.0 |
+| userclk1            | PCIeGen1x8If64_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/userclk1        |             2.0 |
+| userclk2            | PCIeGen1x8If64_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/userclk2        |             4.0 |
++---------------------+------------------------------------------------------------------------------------------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++--------------------------------------------------------------------------------+-----------+
+| Name                                                                           | Power (W) |
++--------------------------------------------------------------------------------+-----------+
+| KC705_Gen2x8If128                                                              |     3.149 |
+|   PCIeGen1x8If64_i                                                             |     2.832 |
+|     inst                                                                       |     2.832 |
+|       inst                                                                     |     2.832 |
+|         gt_top_i                                                               |     2.678 |
+|           gt_rx_valid_filter[0].GT_RX_VALID_FILTER_7x_inst                     |    <0.001 |
+|           gt_rx_valid_filter[1].GT_RX_VALID_FILTER_7x_inst                     |    <0.001 |
+|           gt_rx_valid_filter[2].GT_RX_VALID_FILTER_7x_inst                     |    <0.001 |
+|           gt_rx_valid_filter[3].GT_RX_VALID_FILTER_7x_inst                     |    <0.001 |
+|           gt_rx_valid_filter[4].GT_RX_VALID_FILTER_7x_inst                     |    <0.001 |
+|           gt_rx_valid_filter[5].GT_RX_VALID_FILTER_7x_inst                     |    <0.001 |
+|           gt_rx_valid_filter[6].GT_RX_VALID_FILTER_7x_inst                     |    <0.001 |
+|           gt_rx_valid_filter[7].GT_RX_VALID_FILTER_7x_inst                     |    <0.001 |
+|           pipe_wrapper_i                                                       |     2.672 |
+|             pipe_clock_int.pipe_clock_i                                        |     0.111 |
+|             pipe_lane[0].gt_wrapper_i                                          |     0.314 |
+|               cpllPDInst                                                       |    <0.001 |
+|             pipe_lane[0].pipe_drp.pipe_drp_i                                   |     0.001 |
+|             pipe_lane[0].pipe_eq.pipe_eq_i                                     |     0.002 |
+|               rxeq_scan_i                                                      |    <0.001 |
+|             pipe_lane[0].pipe_quad.gt_common_enabled.gt_common_int.gt_common_i |    <0.001 |
+|               qpll_drp_i                                                       |    <0.001 |
+|               qpll_wrapper_i                                                   |    <0.001 |
+|             pipe_lane[0].pipe_rate.pipe_rate_i                                 |     0.001 |
+|             pipe_lane[0].pipe_sync_i                                           |    <0.001 |
+|             pipe_lane[0].pipe_user_i                                           |    <0.001 |
+|             pipe_lane[1].gt_wrapper_i                                          |     0.314 |
+|               cpllPDInst                                                       |    <0.001 |
+|             pipe_lane[1].pipe_drp.pipe_drp_i                                   |     0.001 |
+|             pipe_lane[1].pipe_eq.pipe_eq_i                                     |     0.002 |
+|               rxeq_scan_i                                                      |    <0.001 |
+|             pipe_lane[1].pipe_rate.pipe_rate_i                                 |     0.001 |
+|             pipe_lane[1].pipe_sync_i                                           |    <0.001 |
+|             pipe_lane[1].pipe_user_i                                           |    <0.001 |
+|             pipe_lane[2].gt_wrapper_i                                          |     0.314 |
+|               cpllPDInst                                                       |    <0.001 |
+|             pipe_lane[2].pipe_drp.pipe_drp_i                                   |     0.001 |
+|             pipe_lane[2].pipe_eq.pipe_eq_i                                     |     0.002 |
+|               rxeq_scan_i                                                      |    <0.001 |
+|             pipe_lane[2].pipe_rate.pipe_rate_i                                 |     0.001 |
+|             pipe_lane[2].pipe_sync_i                                           |    <0.001 |
+|             pipe_lane[2].pipe_user_i                                           |    <0.001 |
+|             pipe_lane[3].gt_wrapper_i                                          |     0.314 |
+|               cpllPDInst                                                       |    <0.001 |
+|             pipe_lane[3].pipe_drp.pipe_drp_i                                   |     0.001 |
+|             pipe_lane[3].pipe_eq.pipe_eq_i                                     |     0.002 |
+|               rxeq_scan_i                                                      |    <0.001 |
+|             pipe_lane[3].pipe_rate.pipe_rate_i                                 |     0.001 |
+|             pipe_lane[3].pipe_sync_i                                           |    <0.001 |
+|             pipe_lane[3].pipe_user_i                                           |    <0.001 |
+|             pipe_lane[4].gt_wrapper_i                                          |     0.314 |
+|               cpllPDInst                                                       |    <0.001 |
+|             pipe_lane[4].pipe_drp.pipe_drp_i                                   |     0.001 |
+|             pipe_lane[4].pipe_eq.pipe_eq_i                                     |     0.002 |
+|               rxeq_scan_i                                                      |    <0.001 |
+|             pipe_lane[4].pipe_quad.gt_common_enabled.gt_common_int.gt_common_i |     0.001 |
+|               qpll_drp_i                                                       |    <0.001 |
+|               qpll_wrapper_i                                                   |    <0.001 |
+|             pipe_lane[4].pipe_rate.pipe_rate_i                                 |     0.001 |
+|             pipe_lane[4].pipe_sync_i                                           |    <0.001 |
+|             pipe_lane[4].pipe_user_i                                           |    <0.001 |
+|             pipe_lane[5].gt_wrapper_i                                          |     0.314 |
+|               cpllPDInst                                                       |    <0.001 |
+|             pipe_lane[5].pipe_drp.pipe_drp_i                                   |     0.001 |
+|             pipe_lane[5].pipe_eq.pipe_eq_i                                     |     0.002 |
+|               rxeq_scan_i                                                      |    <0.001 |
+|             pipe_lane[5].pipe_rate.pipe_rate_i                                 |     0.001 |
+|             pipe_lane[5].pipe_sync_i                                           |    <0.001 |
+|             pipe_lane[5].pipe_user_i                                           |    <0.001 |
+|             pipe_lane[6].gt_wrapper_i                                          |     0.314 |
+|               cpllPDInst                                                       |    <0.001 |
+|             pipe_lane[6].pipe_drp.pipe_drp_i                                   |     0.001 |
+|             pipe_lane[6].pipe_eq.pipe_eq_i                                     |     0.002 |
+|               rxeq_scan_i                                                      |    <0.001 |
+|             pipe_lane[6].pipe_rate.pipe_rate_i                                 |     0.001 |
+|             pipe_lane[6].pipe_sync_i                                           |    <0.001 |
+|             pipe_lane[6].pipe_user_i                                           |    <0.001 |
+|             pipe_lane[7].gt_wrapper_i                                          |     0.314 |
+|               cpllPDInst                                                       |    <0.001 |
+|             pipe_lane[7].pipe_drp.pipe_drp_i                                   |     0.002 |
+|             pipe_lane[7].pipe_eq.pipe_eq_i                                     |     0.002 |
+|               rxeq_scan_i                                                      |    <0.001 |
+|             pipe_lane[7].pipe_rate.pipe_rate_i                                 |     0.001 |
+|             pipe_lane[7].pipe_sync_i                                           |    <0.001 |
+|             pipe_lane[7].pipe_user_i                                           |    <0.001 |
+|             pipe_reset.pipe_reset_i                                            |     0.002 |
+|             qpll_reset.qpll_reset_i                                            |     0.001 |
+|         pcie_top_i                                                             |     0.153 |
+|           axi_basic_top                                                        |     0.008 |
+|             rx_inst                                                            |     0.004 |
+|               rx_null_gen_inst                                                 |     0.002 |
+|               rx_pipeline_inst                                                 |     0.003 |
+|             tx_inst                                                            |     0.003 |
+|               thrtl_ctl_enabled.tx_thrl_ctl_inst                               |    <0.001 |
+|               tx_pipeline_inst                                                 |     0.002 |
+|           pcie_7x_i                                                            |     0.135 |
+|             pcie_bram_top                                                      |     0.046 |
+|               pcie_brams_rx                                                    |     0.023 |
+|                 brams[0].ram                                                   |     0.012 |
+|                   use_sdp.ramb36sdp                                            |     0.012 |
+|                 brams[1].ram                                                   |     0.012 |
+|                   use_sdp.ramb36sdp                                            |     0.012 |
+|               pcie_brams_tx                                                    |     0.023 |
+|                 brams[0].ram                                                   |     0.012 |
+|                   use_sdp.ramb36sdp                                            |     0.012 |
+|                 brams[1].ram                                                   |     0.012 |
+|                   use_sdp.ramb36sdp                                            |     0.012 |
+|           pcie_pipe_pipeline_i                                                 |     0.010 |
+|             pipe_2_lane.pipe_lane_1_i                                          |     0.001 |
+|             pipe_4_lane.pipe_lane_2_i                                          |     0.001 |
+|             pipe_4_lane.pipe_lane_3_i                                          |     0.001 |
+|             pipe_8_lane.pipe_lane_4_i                                          |     0.001 |
+|             pipe_8_lane.pipe_lane_5_i                                          |     0.001 |
+|             pipe_8_lane.pipe_lane_6_i                                          |     0.001 |
+|             pipe_8_lane.pipe_lane_7_i                                          |     0.001 |
+|             pipe_lane_0_i                                                      |     0.001 |
+|             pipe_misc_i                                                        |    <0.001 |
+|         phy_lnk_up_cdc                                                         |    <0.001 |
+|         pl_received_hot_rst_cdc                                                |    <0.001 |
+|   riffa                                                                        |     0.314 |
+|     engine_layer_inst                                                          |     0.090 |
+|       rx_engine_classic_inst                                                   |     0.011 |
+|         data_shiftreg_inst                                                     |     0.009 |
+|         eoff_shiftreg_inst                                                     |    <0.001 |
+|         eop_shiftreg_inst                                                      |    <0.001 |
+|         rxc_engine_inst                                                        |     0.001 |
+|           hdr_register_127_64                                                  |    <0.001 |
+|           hdr_register_63_0                                                    |    <0.001 |
+|           metadata                                                             |    <0.001 |
+|           metadata_valid                                                       |    <0.001 |
+|           output_pipeline                                                      |    <0.001 |
+|             pipeline_inst                                                      |    <0.001 |
+|           sf4dwh                                                               |    <0.001 |
+|         rxr_engine_inst                                                        |    <0.001 |
+|           delayed_sop                                                          |    <0.001 |
+|           hdr_register_127_64                                                  |    <0.001 |
+|           hdr_register_63_0                                                    |    <0.001 |
+|           metadata                                                             |    <0.001 |
+|           metadata_valid                                                       |    <0.001 |
+|           output_pipeline                                                      |    <0.001 |
+|             pipeline_inst                                                      |    <0.001 |
+|           sf4dwh                                                               |    <0.001 |
+|         soff_shiftreg_inst                                                     |    <0.001 |
+|         sop_shiftreg_inst                                                      |    <0.001 |
+|         valid_shiftreg_inst                                                    |    <0.001 |
+|       tx_engine_classic_inst                                                   |     0.078 |
+|         output_reg_inst                                                        |     0.002 |
+|           pipeline_inst                                                        |     0.002 |
+|         rc_inst                                                                |    <0.001 |
+|           rst_counter                                                          |    <0.001 |
+|         rst_shiftreg                                                           |    <0.001 |
+|         tx_mux_inst                                                            |     0.002 |
+|           tx_arbiter_inst                                                      |    <0.001 |
+|           tx_output_inst                                                       |     0.002 |
+|             pipeline_inst                                                      |     0.002 |
+|         txc_engine_inst                                                        |     0.021 |
+|           txc_engine_inst                                                      |     0.020 |
+|             tx_alignment_inst                                                  |     0.008 |
+|               compute_reg                                                      |     0.002 |
+|                 pipeline_inst                                                  |     0.002 |
+|               gen_data_input_regs[0].data_register_                            |    <0.001 |
+|                 pipeline_inst                                                  |    <0.001 |
+|               gen_data_input_regs[0].packet_valid_register                     |    <0.001 |
+|                 pipeline_inst                                                  |    <0.001 |
+|               gen_data_input_regs[1].data_register_                            |    <0.001 |
+|                 pipeline_inst                                                  |    <0.001 |
+|               gen_data_input_regs[1].packet_valid_register                     |    <0.001 |
+|                 pipeline_inst                                                  |    <0.001 |
+|               gen_data_input_regs[2].data_register_                            |    <0.001 |
+|                 pipeline_inst                                                  |    <0.001 |
+|               gen_data_input_regs[2].packet_valid_register                     |    <0.001 |
+|                 pipeline_inst                                                  |    <0.001 |
+|               gen_data_input_regs[3].data_register_                            |    <0.001 |
+|                 pipeline_inst                                                  |    <0.001 |
+|               gen_data_input_regs[3].packet_valid_register                     |    <0.001 |
+|                 pipeline_inst                                                  |    <0.001 |
+|               hdr_input_reg                                                    |    <0.001 |
+|                 pipeline_inst                                                  |    <0.001 |
+|               output_register_inst                                             |     0.002 |
+|                 pipeline_inst                                                  |     0.002 |
+|               pktctr_inst                                                      |    <0.001 |
+|               ready_reg                                                        |     0.002 |
+|                 pipeline_inst                                                  |     0.002 |
+|               rot_inst                                                         |    <0.001 |
+|               satctr_inst                                                      |    <0.001 |
+|               select_reg                                                       |    <0.001 |
+|                 pipeline_inst                                                  |    <0.001 |
+|             tx_data_pipeline_inst                                              |     0.009 |
+|               tx_shift_inst                                                    |    <0.001 |
+|                 input_register                                                 |    <0.001 |
+|                   pipeline_inst                                                |    <0.001 |
+|               txdf_inst                                                        |     0.008 |
+|                 gen_regs_fifos[0].fifo_inst_                                   |     0.004 |
+|                   mem                                                          |     0.004 |
+|                 gen_regs_fifos[0].fifo_pipeline_inst_                          |    <0.001 |
+|                   pipeline_inst                                                |    <0.001 |
+|                 gen_regs_fifos[0].input_pipeline_inst_                         |    <0.001 |
+|                   pipeline_inst                                                |    <0.001 |
+|                 gen_regs_fifos[0].perfifo_ctr_inst                             |    <0.001 |
+|                 gen_regs_fifos[1].fifo_inst_                                   |    <0.001 |
+|                   mem                                                          |    <0.001 |
+|                 gen_regs_fifos[1].fifo_pipeline_inst_                          |    <0.001 |
+|                   pipeline_inst                                                |    <0.001 |
+|                 gen_regs_fifos[1].perfifo_ctr_inst                             |    <0.001 |
+|                 gen_regs_fifos[2].fifo_inst_                                   |    <0.001 |
+|                   mem                                                          |    <0.001 |
+|                 gen_regs_fifos[2].fifo_pipeline_inst_                          |    <0.001 |
+|                   pipeline_inst                                                |    <0.001 |
+|                 gen_regs_fifos[2].perfifo_ctr_inst                             |    <0.001 |
+|                 gen_regs_fifos[3].fifo_inst_                                   |    <0.001 |
+|                   mem                                                          |    <0.001 |
+|                 gen_regs_fifos[3].fifo_pipeline_inst_                          |    <0.001 |
+|                   pipeline_inst                                                |    <0.001 |
+|                 gen_regs_fifos[3].perfifo_ctr_inst                             |    <0.001 |
+|                 packet_valid_reg                                               |    <0.001 |
+|                   pipeline_inst                                                |    <0.001 |
+|             txhf_inst                                                          |     0.004 |
+|               fifo_inst                                                        |     0.003 |
+|                 mem                                                            |     0.003 |
+|               input_pipeline_inst                                              |    <0.001 |
+|                 pipeline_inst                                                  |    <0.001 |
+|           txc_formatter_inst                                                   |    <0.001 |
+|             input_inst                                                         |    <0.001 |
+|               pipeline_inst                                                    |    <0.001 |
+|         txr_engine_inst                                                        |     0.053 |
+|           txr_engine_inst                                                      |     0.048 |
+|             tx_alignment_inst                                                  |     0.008 |
+|               compute_reg                                                      |     0.002 |
+|                 pipeline_inst                                                  |     0.002 |
+|               gen_data_input_regs[0].data_register_                            |    <0.001 |
+|                 pipeline_inst                                                  |    <0.001 |
+|               gen_data_input_regs[0].packet_valid_register                     |    <0.001 |
+|                 pipeline_inst                                                  |    <0.001 |
+|               gen_data_input_regs[1].data_register_                            |    <0.001 |
+|                 pipeline_inst                                                  |    <0.001 |
+|               gen_data_input_regs[1].packet_valid_register                     |    <0.001 |
+|                 pipeline_inst                                                  |    <0.001 |
+|               gen_data_input_regs[2].data_register_                            |    <0.001 |
+|                 pipeline_inst                                                  |    <0.001 |
+|               gen_data_input_regs[2].packet_valid_register                     |    <0.001 |
+|                 pipeline_inst                                                  |    <0.001 |
+|               gen_data_input_regs[3].data_register_                            |    <0.001 |
+|                 pipeline_inst                                                  |    <0.001 |
+|               gen_data_input_regs[3].packet_valid_register                     |    <0.001 |
+|                 pipeline_inst                                                  |    <0.001 |
+|               hdr_input_reg                                                    |    <0.001 |
+|                 pipeline_inst                                                  |    <0.001 |
+|               output_register_inst                                             |     0.002 |
+|                 pipeline_inst                                                  |     0.002 |
+|               pktctr_inst                                                      |    <0.001 |
+|               ready_reg                                                        |     0.001 |
+|                 pipeline_inst                                                  |     0.001 |
+|               rot_inst                                                         |    <0.001 |
+|               satctr_inst                                                      |    <0.001 |
+|               select_reg                                                       |    <0.001 |
+|                 pipeline_inst                                                  |    <0.001 |
+|             tx_data_pipeline_inst                                              |     0.017 |
+|               tx_shift_inst                                                    |     0.003 |
+|                 input_register                                                 |     0.003 |
+|                   pipeline_inst                                                |     0.003 |
+|               txdf_inst                                                        |     0.014 |
+|                 gen_regs_fifos[0].fifo_inst_                                   |     0.001 |
+|                   mem                                                          |    <0.001 |
+|                 gen_regs_fifos[0].fifo_pipeline_inst_                          |    <0.001 |
+|                   pipeline_inst                                                |    <0.001 |
+|                 gen_regs_fifos[0].input_pipeline_inst_                         |    <0.001 |
+|                   pipeline_inst                                                |    <0.001 |
+|                 gen_regs_fifos[0].perfifo_ctr_inst                             |    <0.001 |
+|                 gen_regs_fifos[1].fifo_inst_                                   |     0.003 |
+|                   mem                                                          |     0.002 |
+|                 gen_regs_fifos[1].fifo_pipeline_inst_                          |    <0.001 |
+|                   pipeline_inst                                                |    <0.001 |
+|                 gen_regs_fifos[1].input_pipeline_inst_                         |    <0.001 |
+|                   pipeline_inst                                                |    <0.001 |
+|                 gen_regs_fifos[1].perfifo_ctr_inst                             |    <0.001 |
+|                 gen_regs_fifos[2].fifo_inst_                                   |     0.001 |
+|                   mem                                                          |    <0.001 |
+|                 gen_regs_fifos[2].fifo_pipeline_inst_                          |    <0.001 |
+|                   pipeline_inst                                                |    <0.001 |
+|                 gen_regs_fifos[2].input_pipeline_inst_                         |    <0.001 |
+|                   pipeline_inst                                                |    <0.001 |
+|                 gen_regs_fifos[2].perfifo_ctr_inst                             |    <0.001 |
+|                 gen_regs_fifos[3].fifo_inst_                                   |     0.003 |
+|                   mem                                                          |     0.002 |
+|                 gen_regs_fifos[3].fifo_pipeline_inst_                          |    <0.001 |
+|                   pipeline_inst                                                |    <0.001 |
+|                 gen_regs_fifos[3].input_pipeline_inst_                         |    <0.001 |
+|                   pipeline_inst                                                |    <0.001 |
+|                 gen_regs_fifos[3].perfifo_ctr_inst                             |    <0.001 |
+|                 packet_valid_reg                                               |    <0.001 |
+|                   pipeline_inst                                                |    <0.001 |
+|             txhf_inst                                                          |     0.023 |
+|               fifo_inst                                                        |     0.020 |
+|                 mem                                                            |     0.019 |
+|               input_pipeline_inst                                              |     0.004 |
+|                 pipeline_inst                                                  |     0.004 |
+|           txr_formatter_inst                                                   |     0.004 |
+|             input_inst                                                         |     0.004 |
+|               pipeline_inst                                                    |     0.004 |
+|     riffa_inst                                                                 |     0.224 |
+|       channels[0].channel                                                      |     0.165 |
+|         channel                                                                |     0.165 |
+|           rxPort                                                               |     0.093 |
+|             gate                                                               |     0.001 |
+|               countSync                                                        |    <0.001 |
+|                 sigAtoB                                                        |    <0.001 |
+|                   metaFF                                                       |    <0.001 |
+|                   syncFF                                                       |    <0.001 |
+|                 sigBtoA                                                        |    <0.001 |
+|                   metaFF                                                       |    <0.001 |
+|                   syncFF                                                       |    <0.001 |
+|               rxAckSig                                                         |    <0.001 |
+|                 metaFF                                                         |    <0.001 |
+|                 syncFF                                                         |    <0.001 |
+|               rxSig                                                            |    <0.001 |
+|                 sigAtoB                                                        |    <0.001 |
+|                   metaFF                                                       |    <0.001 |
+|                   syncFF                                                       |    <0.001 |
+|                 sigBtoA                                                        |    <0.001 |
+|                   metaFF                                                       |    <0.001 |
+|                   syncFF                                                       |    <0.001 |
+|             mainFifo                                                           |     0.010 |
+|               fifo                                                             |     0.006 |
+|                 asyncCompare                                                   |    <0.001 |
+|                 mem                                                            |     0.002 |
+|                 rdPtrEmpty                                                     |     0.002 |
+|                 wrPtrFull                                                      |     0.002 |
+|             mainFifoPacker                                                     |     0.010 |
+|             reader                                                             |     0.023 |
+|             requesterMux                                                       |     0.002 |
+|             sgListReader                                                       |     0.003 |
+|             sgRxFifo                                                           |     0.002 |
+|               mem                                                              |    <0.001 |
+|             sgRxFifoPacker                                                     |     0.009 |
+|             sgRxReq                                                            |     0.010 |
+|             sgTxFifo                                                           |     0.001 |
+|               mem                                                              |    <0.001 |
+|             sgTxFifoPacker                                                     |     0.009 |
+|             sgTxReq                                                            |     0.010 |
+|           txPort                                                               |     0.072 |
+|             buffer                                                             |     0.028 |
+|               fifo                                                             |     0.017 |
+|                 mem                                                            |     0.016 |
+|             gate                                                               |     0.015 |
+|               fifo                                                             |     0.011 |
+|                 asyncCompare                                                   |    <0.001 |
+|                 mem                                                            |     0.009 |
+|                 rdPtrEmpty                                                     |    <0.001 |
+|                 wrPtrFull                                                      |     0.002 |
+|             monitor                                                            |     0.004 |
+|             sgListReader                                                       |     0.003 |
+|             writer                                                             |     0.022 |
+|       intr                                                                     |    <0.001 |
+|         intrCtlr                                                               |    <0.001 |
+|       rc_fc                                                                    |     0.001 |
+|       reg_inst                                                                 |     0.005 |
+|         chnl_output_register                                                   |    <0.001 |
+|           pipeline_inst                                                        |    <0.001 |
+|         rxr_input_register                                                     |     0.003 |
+|           pipeline_inst                                                        |     0.003 |
+|         txc_output_register                                                    |    <0.001 |
+|           pipeline_inst                                                        |    <0.001 |
+|       reorderQueue                                                             |     0.042 |
+|         data_input                                                             |     0.016 |
+|           countRam                                                             |    <0.001 |
+|             rRAM_reg_0_31_0_5                                                  |    <0.001 |
+|             rRAM_reg_0_31_6_7                                                  |    <0.001 |
+|           posRam                                                               |    <0.001 |
+|             rRAM_reg_0_31_0_5                                                  |    <0.001 |
+|             rRAM_reg_0_31_12_17                                                |    <0.001 |
+|             rRAM_reg_0_31_18_19                                                |    <0.001 |
+|             rRAM_reg_0_31_6_11                                                 |    <0.001 |
+|         data_output                                                            |     0.005 |
+|         mapRam                                                                 |    <0.001 |
+|           rRAM_reg_0_31_0_5                                                    |    <0.001 |
+|         pktRam                                                                 |    <0.001 |
+|           rRAM_reg_0_31_0_5                                                    |    <0.001 |
+|           rRAM_reg_0_31_6_11                                                   |    <0.001 |
+|         rams[0].ram                                                            |     0.005 |
+|         rams[1].ram                                                            |     0.005 |
+|         rams[2].ram                                                            |     0.005 |
+|         rams[3].ram                                                            |     0.005 |
+|       reset_extender_inst                                                      |    <0.001 |
+|         rst_counter                                                            |    <0.001 |
+|         rst_shiftreg                                                           |    <0.001 |
+|       tx_mux_inst                                                              |     0.010 |
+|         req_ack_fifo                                                           |    <0.001 |
+|           mem                                                                  |    <0.001 |
+|             rMemory_reg_0_31_0_0                                               |    <0.001 |
+|         tx_mux_128_inst                                                        |     0.009 |
+|           selRd                                                                |    <0.001 |
+|           selWr                                                                |    <0.001 |
+|       txc_data_hold                                                            |    <0.001 |
+|         pipeline_inst                                                          |    <0.001 |
+|       txc_meta_hold                                                            |    <0.001 |
+|         pipeline_inst                                                          |    <0.001 |
+|   test_channels[0].module1                                                     |     0.003 |
++--------------------------------------------------------------------------------+-----------+
+
+
