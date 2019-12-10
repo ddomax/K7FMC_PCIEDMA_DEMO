@@ -1,0 +1,325 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Wed Dec 11 05:37:56 2019
+# Process ID: 4192
+# Current directory: D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.runs/axi_spi_top_BridgeToPCIE_0_0_synth_1
+# Command line: vivado.exe -log axi_spi_top_BridgeToPCIE_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source axi_spi_top_BridgeToPCIE_0_0.tcl
+# Log file: D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.runs/axi_spi_top_BridgeToPCIE_0_0_synth_1/axi_spi_top_BridgeToPCIE_0_0.vds
+# Journal file: D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.runs/axi_spi_top_BridgeToPCIE_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source axi_spi_top_BridgeToPCIE_0_0.tcl -notrace
+Command: synth_design -top axi_spi_top_BridgeToPCIE_0_0 -part xc7k325tffg900-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2084 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 419.309 ; gain = 104.434
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'axi_spi_top_BridgeToPCIE_0_0' [d:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_BridgeToPCIE_0_0/synth/axi_spi_top_BridgeToPCIE_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'BridgeToPCIE' [D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/new/BridgeToPCIE.v:23]
+	Parameter I_WIDTH bound to: 14 - type: integer 
+	Parameter O_WIDTH bound to: 128 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'BridgeToPCIE' (1#1) [D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/new/BridgeToPCIE.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'axi_spi_top_BridgeToPCIE_0_0' (2#1) [d:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/ip/axi_spi_top_BridgeToPCIE_0_0/synth/axi_spi_top_BridgeToPCIE_0_0.v:57]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 473.621 ; gain = 158.746
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 473.621 ; gain = 158.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 473.621 ; gain = 158.746
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 762.273 ; gain = 0.012
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 762.273 ; gain = 447.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 762.273 ; gain = 447.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 762.273 ; gain = 447.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 762.273 ; gain = 447.398
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3330] design axi_spi_top_BridgeToPCIE_0_0 has an empty top module
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[113] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[112] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[111] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[110] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[109] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[108] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[107] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[106] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[105] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[104] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[103] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[102] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[101] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[100] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[99] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[98] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[97] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[96] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[81] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[80] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[79] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[78] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[77] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[76] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[75] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[74] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[73] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[72] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[71] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[70] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[69] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[68] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[67] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[66] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[65] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[64] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[49] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[48] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[47] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[46] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[45] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[44] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[43] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[42] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[41] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[40] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[39] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[38] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[37] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[36] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[35] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[34] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[33] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[32] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[17] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[16] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[15] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[14] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[13] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[12] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[11] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[10] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[9] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[8] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[7] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[6] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[5] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[4] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[3] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[2] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[1] driven by constant 0
+INFO: [Synth 8-3917] design axi_spi_top_BridgeToPCIE_0_0 has port o_data[0] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 762.273 ; gain = 447.398
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 824.559 ; gain = 509.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 824.559 ; gain = 509.684
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 824.559 ; gain = 509.684
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 825.688 ; gain = 510.813
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 825.688 ; gain = 510.813
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 825.688 ; gain = 510.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 825.688 ; gain = 510.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 825.688 ; gain = 510.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 825.688 ; gain = 510.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 825.688 ; gain = 510.813
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 825.688 ; gain = 222.160
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 825.688 ; gain = 510.813
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+85 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 857.633 ; gain = 554.691
+INFO: [Common 17-1381] The checkpoint 'D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.runs/axi_spi_top_BridgeToPCIE_0_0_synth_1/axi_spi_top_BridgeToPCIE_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.runs/axi_spi_top_BridgeToPCIE_0_0_synth_1/axi_spi_top_BridgeToPCIE_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file axi_spi_top_BridgeToPCIE_0_0_utilization_synth.rpt -pb axi_spi_top_BridgeToPCIE_0_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.146 . Memory (MB): peak = 857.633 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 11 05:38:43 2019...
