@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="35">
   <CompositeFile CompositeFileTopName="axi_spi_top" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1576013859"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1576013859"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1576013859"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1576013859"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1576746352"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1576746352"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1576746352"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1576746352"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\axi_spi_top_axi_quad_spi_0_0\axi_spi_top_axi_quad_spi_0_0.xci" Type="IP">
         <Instance HierarchyPath="axi_quad_spi_0"/>

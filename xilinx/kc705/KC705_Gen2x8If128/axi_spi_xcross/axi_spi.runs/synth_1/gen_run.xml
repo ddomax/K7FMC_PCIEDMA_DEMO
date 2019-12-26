@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1576014542">
-  <File Type="PA-TCL" Name="axi_spi_top_wrapper.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="axi_spi_top_wrapper_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="axi_spi_top_wrapper_reports.tcl"/>
-  <File Type="RDS-RDS" Name="axi_spi_top_wrapper.vds"/>
-  <File Type="RDS-UTIL" Name="axi_spi_top_wrapper_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="axi_spi_top_wrapper_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="axi_spi_top_wrapper.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="axi_spi_top_wrapper_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="axi_spi_top_wrapper_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1577154038">
+  <File Type="PA-TCL" Name="jesd_adc_part.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="jesd_adc_part_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="jesd_adc_part_reports.tcl"/>
+  <File Type="RDS-RDS" Name="jesd_adc_part.vds"/>
+  <File Type="RDS-UTIL" Name="jesd_adc_part_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="jesd_adc_part_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="jesd_adc_part.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="jesd_adc_part_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="jesd_adc_part_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/Tgate.v">
@@ -61,6 +61,13 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/BridgeToPCIE.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/PCIEBridge/PCIEBridge.bd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -758,8 +765,16 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/bd/axi_spi_top/hdl/axi_spi_top_wrapper.v">
+    <File Path="$PSRCDIR/sources_1/new/jesd_adc_part.v">
       <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/chnl_moniter.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -818,8 +833,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="axi_spi_top_wrapper"/>
-      <Option Name="TopAutoSet" Val="TRUE"/>
+      <Option Name="TopModule" Val="jesd_adc_part"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -842,9 +856,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="axi_spi_top_Tgate_width5_0_0"/>
@@ -869,4 +881,7 @@
   <BlockFileSet Type="BlockSrcs" Name="axi_spi_top_data_comb_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="axi_spi_top_uart_ila_top_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="axi_spi_top_BridgeToPCIE_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="PCIEBridge_system_ila_0_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="PCIEBridge_rst_aclk_250M_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="PCIEBridge_axis_data_fifo_0_0"/>
 </GenRun>

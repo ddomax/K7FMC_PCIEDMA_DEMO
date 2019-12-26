@@ -61,9 +61,47 @@ module KC705_Gen2x8If128
      input [(C_NUM_LANES - 1) : 0]  PCI_EXP_RXN,
 
      output [3:0]                   LED,
-     input                          PCIE_REFCLK_P,
-     input                          PCIE_REFCLK_N,
-     input                          PCIE_RESET_N
+     input                          PCIE_REFCLK,
+     input                          PCIE_RESET_N,
+     
+     output m_axis_aclk,
+     
+     //M_AXIS Interface
+     output m_axis_tvalid,
+     input m_axis_tready,
+     output [C_PCI_DATA_WIDTH-1:0] m_axis_tdata,
+     
+     //S_AXIS Interface
+     input s_axis_tvalid,
+     output s_axis_tready,
+     input [C_PCI_DATA_WIDTH-1:0] s_axis_tdata,
+     
+     //Status Interface
+     output [31:0] STATUS_rLen,
+     output [31:0] STATUS_rCount,
+     output [1:0] STATUS_rState,
+     
+     //Debug Port
+     output RST,
+     output CHNL_RX_CLK, 
+     output CHNL_RX, 
+     output CHNL_RX_ACK, 
+     output CHNL_RX_LAST, 
+     output [31:0] CHNL_RX_LEN, 
+     output [30:0] CHNL_RX_OFF, 
+     output [C_PCI_DATA_WIDTH-1:0] CHNL_RX_DATA, 
+     output CHNL_RX_DATA_VALID, 
+     output CHNL_RX_DATA_REN,
+     
+     output CHNL_TX_CLK, 
+     output CHNL_TX, 
+     output CHNL_TX_ACK, 
+     output CHNL_TX_LAST, 
+     output [31:0] CHNL_TX_LEN, 
+     output [30:0] CHNL_TX_OFF, 
+     output [C_PCI_DATA_WIDTH-1:0] CHNL_TX_DATA, 
+     output CHNL_TX_DATA_VALID, 
+     output CHNL_TX_DATA_REN
      );
 
     wire                            pcie_refclk;
@@ -160,6 +198,17 @@ module KC705_Gen2x8If128
     wire [(C_NUM_CHNL*C_PCI_DATA_WIDTH)-1:0]   chnl_tx_data; 
     wire [C_NUM_CHNL-1:0]                      chnl_tx_data_valid; 
     wire [C_NUM_CHNL-1:0]                      chnl_tx_data_ren;
+    
+    
+    //Status Interface
+    wire [(C_NUM_CHNL*32-1):0]              status_rlen; 
+    wire [(C_NUM_CHNL*32-1):0]              status_rcount;
+    wire [(C_NUM_CHNL*2-1):0]              status_rstate;
+    
+    //Status Interface Connections
+    assign  STATUS_rLen     =   status_rlen;
+    assign  STATUS_rCount   =   status_rcount;
+    assign  STATUS_rState   =   status_rstate;
 
     genvar                                     chnl;
 
@@ -177,20 +226,34 @@ module KC705_Gen2x8If128
     assign cfg_turnoff_ok = 0;
     assign cfg_pm_wake = 0;
 
-    IBUF 
-        #()  
-    pci_reset_n_ibuf 
-        (.O(pcie_reset_n), 
-         .I(PCIE_RESET_N));
+    assign pcie_reset_n = PCIE_RESET_N;
+    assign pcie_refclk = PCIE_REFCLK;
+    
+    //Debug Signals
+    assign RST = rst_out;    // riffa_reset includes riffa_endpoint resets
+    
+    integer dchnl = 0; //current channel index for debug
+    // Rx interface
+    assign CHNL_RX_CLK = chnl_rx_clk[dchnl]; 
+    assign CHNL_RX = chnl_rx[dchnl]; 
+    assign CHNL_RX_ACK = chnl_rx_ack[dchnl]; 
+    assign CHNL_RX_LAST = chnl_rx_last[dchnl]; 
+    assign CHNL_RX_LEN = chnl_rx_len[32*dchnl +:32]; 
+    assign CHNL_RX_OFF = chnl_rx_off[31*dchnl +:31]; 
+    assign CHNL_RX_DATA = chnl_rx_data[C_PCI_DATA_WIDTH*dchnl +:C_PCI_DATA_WIDTH]; 
+    assign CHNL_RX_DATA_VALID = chnl_rx_data_valid[dchnl]; 
+    assign CHNL_RX_DATA_REN = chnl_rx_data_ren[dchnl];
+    // Tx interface
+    assign CHNL_TX_CLK = chnl_tx_clk[dchnl]; 
+    assign CHNL_TX = chnl_tx[dchnl]; 
+    assign CHNL_TX_ACK = chnl_tx_ack[dchnl]; 
+    assign CHNL_TX_LAST = chnl_tx_last[dchnl]; 
+    assign CHNL_TX_LEN = chnl_tx_len[32*dchnl +:32]; 
+    assign CHNL_TX_OFF = chnl_tx_off[31*dchnl +:31]; 
+    assign CHNL_TX_DATA = chnl_tx_data[C_PCI_DATA_WIDTH*dchnl +:C_PCI_DATA_WIDTH]; 
+    assign CHNL_TX_DATA_VALID = chnl_tx_data_valid[dchnl]; 
+    assign CHNL_TX_DATA_REN = chnl_tx_data_ren[dchnl];
 
-    IBUFDS_GTE2 
-        #()
-    refclk_ibuf 
-        (.O(pcie_refclk), 
-         .ODIV2(), 
-         .I(PCIE_REFCLK_P), 
-         .CEB(1'b0), 
-         .IB(PCIE_REFCLK_N));
 
     // Core Top Level Wrapper
 
@@ -391,7 +454,25 @@ module KC705_Gen2x8If128
                      .CHNL_TX_OFF(chnl_tx_off[31*chnl +:31]), 
                      .CHNL_TX_DATA(chnl_tx_data[C_PCI_DATA_WIDTH*chnl +:C_PCI_DATA_WIDTH]), 
                      .CHNL_TX_DATA_VALID(chnl_tx_data_valid[chnl]), 
-                     .CHNL_TX_DATA_REN(chnl_tx_data_ren[chnl])
+                     .CHNL_TX_DATA_REN(chnl_tx_data_ren[chnl]),
+                     
+                     .m_axis_aclk(m_axis_aclk),
+                     
+                     //M_AXIS Interface
+                     .m_axis_tvalid(m_axis_tvalid),
+                     .m_axis_tready(m_axis_tready),
+                     .m_axis_tdata(m_axis_tdata),
+                     
+                     //S_AXIS Interface
+                     .s_axis_tvalid(s_axis_tvalid),
+                     .s_axis_tready(s_axis_tready),
+                     .s_axis_tdata(s_axis_tdata),
+                     
+                     //Status Interface
+                     .STATUS_rLen(status_rlen[32*chnl +:32]),
+                     .STATUS_rCount(status_rcount[32*chnl +:32]),
+                     .STATUS_rState(status_rstate[2*chnl +: 2])
+                     
                      );    
         end
     endgenerate

@@ -1,0 +1,8 @@
+RIFFA用户数据接口说明：
+Tx接口：
+1、EP拉高CHNL_TX进入发送等待状态
+2、EP必须在ROOT拉高CHNL_TX_DATA_REN前，准备好数据的同时拉高CHNL_TX_DATA_VALID
+3、ROOT执行FPGA_Receive()函数，拉高CHNL_TX_DATA_REN的同时立即开始传输数据
+4、EP拉低CHNL_TX_DATA_VALID结束数据传输（当FPGA_Receive()参数中指定数量的数据传输完成后，ROOT不会有动作）
+5、EP拉低CHNL_TX，退出发送状态
+6、ROOT在1个CLK周期后拉低CHNL_TX_DATA_REN，退出数据接收，并返回实际接收的数据量

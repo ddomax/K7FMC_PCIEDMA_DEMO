@@ -1,0 +1,1327 @@
+/*
+
+Xilinx Vivado v2018.1 (64-bit) [Major: 2018, Minor: 1]
+SW Build: 2188600 on Wed Apr  4 18:40:38 MDT 2018
+IP Build: 2185939 on Wed Apr  4 20:55:05 MDT 2018
+
+Process ID: 10916
+License: Customer
+
+Current time: 	Thu Dec 19 10:21:01 CST 2019
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 2560x1440
+Screen resolution (DPI): 120
+Available screens: 1
+Available disk space: 15 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.1/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.1/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	zhati
+User home directory: C:/Users/zhati
+User working directory: D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.1
+RDI_DATADIR: C:/Xilinx/Vivado/2018.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.1/bin
+
+Vivado preferences file location: C:/Users/zhati/AppData/Roaming/Xilinx/Vivado/2018.1/vivado.xml
+Vivado preferences directory: C:/Users/zhati/AppData/Roaming/Xilinx/Vivado/2018.1/
+Vivado layouts directory: C:/Users/zhati/AppData/Roaming/Xilinx/Vivado/2018.1/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.1/lib/classes/planAhead.jar
+Vivado log file location: 	D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/vivado.log
+Vivado journal file location: 	D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/vivado.jou
+Engine tmp dir: 	D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/.Xil/Vivado-10916-zhatianyics-PC
+
+GUI allocated memory:	200 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 642 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 92 MB (+93619kb) [00:00:06]
+// [Engine Memory]: 550 MB (+424892kb) [00:00:06]
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bv (ch):  Open Project : addNotify
+// Opening Vivado Project: D:\K7_FMC_PCIE\K7FMC_PCIEDMA_DEMO\xilinx\kc705\KC705_Gen2x8If128\axi_spi_xcross\axi_spi.xpr. Version: Vivado v2018.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// [Engine Memory]: 639 MB (+64945kb) [00:00:09]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 672 MB. GUI used memory: 43 MB. Current time: 12/19/19 10:21:04 AM CST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 672 MB (+1396kb) [00:00:14]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 726 MB (+20584kb) [00:00:17]
+// [Engine Memory]: 766 MB (+4028kb) [00:00:17]
+// Tcl Message: open_project D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado2018_wrk/UART_ILA_pack/ip_repo'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.1/data/ip'. 
+// [Engine Memory]: 816 MB (+12565kb) [00:00:20]
+// Tcl Message: open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:13 . Memory (MB): peak = 971.961 ; gain = 221.773 
+// Project name: axi_spi; location: D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross; part: xc7k325tffg900-2
+dismissDialog("Open Project"); // bv (ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// [GUI Memory]: 103 MB (+6846kb) [00:00:27]
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 109 MB (+856kb) [00:00:35]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 47 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, axi_spi_top_wrapper (axi_spi_top_wrapper.v)]", 2); // B (D, ch)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, axi_spi_top_wrapper (axi_spi_top_wrapper.v), KC705_Gen2x8If128 : KC705_Gen2x8If128 (KC705_Gen2x8If128.v)]", 4); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, axi_spi_top_wrapper (axi_spi_top_wrapper.v), KC705_Gen2x8If128 : KC705_Gen2x8If128 (KC705_Gen2x8If128.v), test_channels[0].module1 : chnl_tester (chnl_tester.v)]", 7, false); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, axi_spi_top_wrapper (axi_spi_top_wrapper.v), KC705_Gen2x8If128 : KC705_Gen2x8If128 (KC705_Gen2x8If128.v), test_channels[0].module1 : chnl_tester (chnl_tester.v)]", 7, false, false, false, false, false, true); // B (D, ch) - Double Click
+// [GUI Memory]: 120 MB (+6242kb) [00:01:12]
+// HMemoryUtils.trashcanNow. Engine heap size: 847 MB. GUI used memory: 86 MB. Current time: 12/19/19 10:22:04 AM CST
+selectCodeEditor("chnl_tester.v", 404, 547); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 417, 557); // cd (w, ch)
+// Elapsed time: 26 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, axi_spi_top_wrapper (axi_spi_top_wrapper.v), axi_spi_top_i : axi_spi_top (axi_spi_top.bd)]", 3, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, axi_spi_top_wrapper (axi_spi_top_wrapper.v), axi_spi_top_i : axi_spi_top (axi_spi_top.bd)]", 3, true, false, false, false, false, true); // B (D, ch) - Double Click - Node
+// bv (ch):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd} 
+// Tcl Message: INFO: [xilinx.com:ip:fifo_generator:13.2-5968] /fifo_generator_0Executing the post_config_ip from bd 
+// Tcl Message: Adding cell -- xilinx.com:module_ref:BridgeToPCIE:1.0 - BridgeToPCIE_0 
+// Tcl Message: Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc Successfully read diagram <axi_spi_top> from BD file <D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd> 
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 935 MB (+82144kb) [00:01:50]
+// TclEventType: RSB_CONNECTION_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 966 MB. GUI used memory: 82 MB. Current time: 12/19/19 10:22:44 AM CST
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1120.270 ; gain = 101.301 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+dismissDialog("Open Block Design"); // bv (ch)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_traffic_gen_1_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_traffic_gen_1_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Net 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /riffa_rd_clk_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /riffa_rd_clk_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /riffa_rd_clk_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /riffa_rd_clk_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /riffa_rd_clk_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /riffa_rd_clk_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /GBT_REFCLK_n_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /GBT_REFCLK_n_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /GBT_REFCLK_n_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /GBT_REFCLK_n_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /GBT_REFCLK_p_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /GBT_REFCLK_p_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /init_delay_0_o_resetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /init_delay_0_o_resetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /jesd204_0_rx_tvalid 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /jesd204_0_rx_tvalid 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /inv_0_O 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /inv_0_O 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /init_delay_1_o_resetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /init_delay_1_o_resetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /init_delay_1_o_resetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /init_delay_1_o_resetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /jesd204_0_rx_tvalid 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /jesd204_0_rx_tvalid 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /init_delay_0_o_resetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /init_delay_0_o_resetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /jesd204_0_rx_tdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /jesd204_0_rx_tdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /jesd204_0_rx_tdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /jesd204_0_rx_tdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /jesd204_0_rx_tdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /jesd204_0_rx_tdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /jesd204_0_rx_tdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /jesd204_0_rx_tdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /jesd204_0_rx_tdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /jesd204_0_rx_tdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /jesd204_0_rx_tdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /jesd204_0_rx_tdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /jesd204_0_rx_tdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /jesd204_0_rx_tdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /jesd204_0_rx_tdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /jesd204_0_rx_tdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /jesd204_0_rx_tdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /jesd204_0_rx_tdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /jesd204_0_rx_tdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /jesd204_0_rx_tdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /jesd204_0_rx_tdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /jesd204_0_rx_tdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /jesd204_0_rx_tdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /jesd204_0_rx_tdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /jesd204_0_rx_tdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /jesd204_0_rx_tdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /jesd204_0_rx_tdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /jesd204_0_rx_tdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /riffa_rd_clk_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /riffa_rd_clk_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /riffa_rd_clk_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /riffa_rd_clk_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /riffa_rd_clk_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /riffa_rd_clk_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /riffa_rd_clk_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /riffa_rd_clk_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /riffa_rd_clk_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /riffa_rd_clk_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /riffa_rd_clk_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /riffa_rd_clk_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /riffa_rd_clk_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /riffa_rd_clk_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /riffa_rd_clk_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /riffa_rd_clk_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /BridgeToPCIE_0_o_data 
+// Elapsed time: 31 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Create Block Design]", 6, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_CREATE_NEW_DIAGRAM
+// aF (ch): Create Block Design: addNotify
+// Elapsed time: 23 seconds
+setText(PAResourceAtoD.CreateNewDiagramDialog_DESIGN_NAME, "PCIEBridge"); // X (Q, aF)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aF)
+// 'J' command handler elapsed time: 23 seconds
+// TclEventType: RSB_SAVE_DIAGRAM
+dismissDialog("Create Block Design"); // aF (ch)
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 983 MB (+628kb) [00:02:47]
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// Tcl Message: create_bd_design "PCIEBridge" 
+// Tcl Message: Wrote  : <D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/PCIEBridge/PCIEBridge.bd>  
+// bv (ch):  Create Block Design : addNotify
+dismissDialog("Create Block Design"); // bv (ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aE (Q, ch)
+// TclEventType: DG_GRAPH_GENERATED
+// A (ch): Confirm Close: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_CLOSE_DIAGRAM
+// Tcl Message: current_bd_design [get_bd_designs axi_spi_top] 
+// Tcl Message: close_bd_design [get_bd_designs axi_spi_top] 
+dismissDialog("Confirm Close"); // A (ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, (String) null); // B (gG, ch)
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, (String) null); // B (gG, ch)
+// HMemoryUtils.trashcanNow. Engine heap size: 986 MB. GUI used memory: 84 MB. Current time: 12/19/19 10:24:00 AM CST
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI-Stream FIFO", 0, "AXI-Stream FIFO", 0, false); // O (O, ResizableWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI-Stream FIFO", 0); // O (O, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI-Stream FIFO", 0, "AXI-Stream FIFO", 0, false, false, false, false, false, true); // O (O, ResizableWindow) - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:axi_fifo_mm_s:4.1 axi_fifo_mm_s_0 
+// Tcl Message: endgroup 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (ch): Re-customize IP: addNotify
+// Elapsed time: 43 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+// [GUI Memory]: 128 MB (+1797kb) [00:03:58]
+dismissDialog("Re-customize IP"); // r (ch)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: delete_bd_objs [get_bd_cells axi_fifo_mm_s_0] 
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, (String) null); // B (gG, ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 12 seconds
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "fifo"); // OverlayTextField (Q, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI4-Stream Data FIFO", 1, "AXI4-Stream Data FIFO", 0, false); // O (O, ResizableWindow)
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:axis_data_fifo:1.1 axis_data_fifo_0 
+// Tcl Message: endgroup 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (ch): Re-customize IP: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 1,010 MB. GUI used memory: 92 MB. Current time: 12/19/19 10:25:18 AM CST
+// Elapsed time: 16 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+dismissDialog("Re-customize IP"); // r (ch)
+// Elapsed time: 50 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, axi_spi_top_wrapper (axi_spi_top_wrapper.v), axi_spi_top_i : axi_spi_top (axi_spi_top.bd)]", 3, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, axi_spi_top_wrapper (axi_spi_top_wrapper.v), KC705_Gen2x8If128 : KC705_Gen2x8If128 (KC705_Gen2x8If128.v)]", 5, true); // B (D, ch) - Node
+// Tcl Message: create_bd_cell -type module -reference KC705_Gen2x8If128 KC705_Gen2x8If128_0 
+// Tcl Message: ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.  
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /KC705_Gen2x8If128_0 
+// a (ch): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, axi_spi_top_wrapper (axi_spi_top_wrapper.v), KC705_Gen2x8If128 : KC705_Gen2x8If128 (KC705_Gen2x8If128.v), PCIeGen1x8If64_i : PCIeGen2x8If128 (PCIeGen2x8If128.xci)]", 6, false); // B (D, ch)
+// Elapsed time: 10 seconds
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // B (f, ch)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 482, 241, 1886, 920, false, false, false, true, false); // fI (k, ch) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // Z (ai, ch)
+selectMenuItem(PAResourceCommand.PACommandNames_PIN_ALL_RSB_ON_CANVAS, "Pin All"); // ac (ch)
+// Run Command: PAResourceCommand.PACommandNames_PIN_ALL_RSB_ON_CANVAS
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+typeControlKey(null, null, 'z');
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /axis_data_fifo_0 
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /axis_data_fifo_0 
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /axis_data_fifo_0 
+// Tcl Message: undo 
+// Tcl Message: INFO: [Common 17-17] undo 'endgroup' INFO: [Common 17-17] undo 'create_bd_cell -type ip -vlnv xilinx.com:ip:axis_data_fifo:1.1 axis_data_fifo_0' INFO: [Common 17-17] undo 'startgroup' 
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, (String) null); // B (gG, ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, (String) null); // B (gG, ch)
+// TclEventType: DG_GRAPH_GENERATED
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "fifo"); // OverlayTextField (Q, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI4-Stream Data FIFO", 1, "AXI4-Stream Data FIFO", 0, false); // O (O, ResizableWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI4-Stream Data FIFO", 1); // O (O, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI4-Stream Data FIFO", 1, "AXI4-Stream Data FIFO", 0, false, false, false, false, false, true); // O (O, ResizableWindow) - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:axis_data_fifo:1.1 axis_data_fifo_0 
+// Tcl Message: endgroup 
+// [GUI Memory]: 137 MB (+2577kb) [00:05:58]
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 472, 434, 1886, 920, false, false, false, true, false); // fI (k, ch) - Popup Trigger
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 338, 519, 1886, 920, false, false, false, true, false); // fI (k, ch) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // Z (ai, ch)
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_CREATE_PORT, "Create Port..."); // ac (ai, ch)
+// ba (ch): Create Port: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ba)
+dismissDialog("Create Port"); // ba (ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PCIEBridge (PCIEBridge.bd)]", 9, false); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, axi_spi_top_wrapper (axi_spi_top_wrapper.v), KC705_Gen2x8If128 : KC705_Gen2x8If128 (KC705_Gen2x8If128.v)]", 5, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, axi_spi_top_wrapper (axi_spi_top_wrapper.v), KC705_Gen2x8If128 : KC705_Gen2x8If128 (KC705_Gen2x8If128.v)]", 5, true, false, false, false, false, true); // B (D, ch) - Double Click - Node
+// Elapsed time: 29 seconds
+selectCodeEditor("KC705_Gen2x8If128.v", 218, 213); // cd (w, ch)
+// Elapsed time: 37 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, axi_spi_top_wrapper (axi_spi_top_wrapper.v), KC705_Gen2x8If128 : KC705_Gen2x8If128 (KC705_Gen2x8If128.v)]", 5, true, false, false, false, true, false); // B (D, ch) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Z (ai, ch)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Z (ai, ch)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Z (ai, ch)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Z (ai, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 347, 747); // cd (w, ch)
+// Elapsed time: 12 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, axi_spi_top_wrapper (axi_spi_top_wrapper.v), KC705_Gen2x8If128 : KC705_Gen2x8If128 (KC705_Gen2x8If128.v)]", 5); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, axi_spi_top_wrapper (axi_spi_top_wrapper.v), KC705_Gen2x8If128 : KC705_Gen2x8If128 (KC705_Gen2x8If128.v), test_channels[0].module1 : chnl_tester (chnl_tester.v)]", 8, false); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, axi_spi_top_wrapper (axi_spi_top_wrapper.v), KC705_Gen2x8If128 : KC705_Gen2x8If128 (KC705_Gen2x8If128.v), test_channels[0].module1 : chnl_tester (chnl_tester.v)]", 8, false, false, false, false, false, true); // B (D, ch) - Double Click
+selectCodeEditor("chnl_tester.v", 236, 328); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 274, 314); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 384, 406); // cd (w, ch)
+// Elapsed time: 36 seconds
+selectCodeEditor("chnl_tester.v", 155, 337); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 155, 337, false, false, false, false, true); // cd (w, ch) - Double Click
+// [Engine Memory]: 1,033 MB (+1379kb) [00:09:00]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,033 MB. GUI used memory: 95 MB. Current time: 12/19/19 10:29:53 AM CST
+// Elapsed time: 32 seconds
+selectCodeEditor("chnl_tester.v", 333, 460); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 117, 459); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 117, 459); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 117, 459, false, false, false, false, true); // cd (w, ch) - Double Click
+selectCodeEditor("chnl_tester.v", 117, 487); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 117, 487, false, false, false, false, true); // cd (w, ch) - Double Click
+selectCodeEditor("chnl_tester.v", 340, 553); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 429, 490); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 459, 465); // cd (w, ch)
+// Elapsed time: 16 seconds
+selectCodeEditor("chnl_tester.v", 373, 452); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 385, 439); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 200, 455); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 200, 455, false, false, false, false, true); // cd (w, ch) - Double Click
+selectCodeEditor("chnl_tester.v", 155, 557); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 155, 557, false, false, false, false, true); // cd (w, ch) - Double Click
+// Elapsed time: 16 seconds
+selectCodeEditor("chnl_tester.v", 206, 314); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 174, 313); // cd (w, ch)
+// Elapsed time: 24 seconds
+selectCodeEditor("chnl_tester.v", 243, 608); // cd (w, ch)
+// Elapsed time: 19 seconds
+selectCodeEditor("chnl_tester.v", 47, 662); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 253, 670); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 407, 607); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 192, 683); // cd (w, ch)
+// Elapsed time: 18 seconds
+selectCodeEditor("chnl_tester.v", 43, 513); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 425, 491); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 86, 462); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 56, 530); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 228, 541); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 223, 463); // cd (w, ch)
+// Elapsed time: 14 seconds
+selectCodeEditor("chnl_tester.v", 172, 665); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 164, 545); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 36, 584); // cd (w, ch)
+typeControlKey((HResource) null, "chnl_tester.v", 'c'); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 216, 486); // cd (w, ch)
+// Elapsed time: 13 seconds
+typeControlKey((HResource) null, "chnl_tester.v", 'v'); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 58, 410); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 58, 410, false, false, false, false, true); // cd (w, ch) - Double Click
+selectCodeEditor("chnl_tester.v", 364, 406); // cd (w, ch)
+typeControlKey((HResource) null, "chnl_tester.v", 'v'); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 270, 441); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 335, 430); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 212, 587); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 230, 563); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 505, 539); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 88, 415); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 281, 410); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 298, 412); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 298, 412, false, false, false, false, true); // cd (w, ch) - Double Click
+selectCodeEditor("chnl_tester.v", 329, 411); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 274, 442); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 274, 442, false, false, false, false, true); // cd (w, ch) - Double Click
+// Elapsed time: 15 seconds
+selectCodeEditor("chnl_tester.v", 220, 607); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 229, 581); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 394, 437); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 541, 430); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 163, 526); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 195, 506); // cd (w, ch)
+// Elapsed time: 12 seconds
+selectCodeEditor("chnl_tester.v", 197, 685); // cd (w, ch)
+typeControlKey((HResource) null, "chnl_tester.v", 'c'); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 155, 510); // cd (w, ch)
+typeControlKey((HResource) null, "chnl_tester.v", 'v'); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 43, 515); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 43, 515, false, false, false, false, true); // cd (w, ch) - Double Click
+selectCodeEditor("chnl_tester.v", 39, 534); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 39, 534, false, false, false, false, true); // cd (w, ch) - Double Click
+selectCodeEditor("chnl_tester.v", 40, 560); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 40, 560, false, false, false, false, true); // cd (w, ch) - Double Click
+selectCodeEditor("chnl_tester.v", 87, 613); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 236, 513); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 266, 539); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 231, 565); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 13 seconds
+selectCodeEditor("chnl_tester.v", 194, 509); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 205, 538); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 196, 559); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 223, 564); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 249, 565); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 239, 594); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("chnl_tester.v", 86, 508); // cd (w, ch)
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 144 MB (+193kb) [00:14:14]
+selectCodeEditor("chnl_tester.v", 140, 296); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 228, 303); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 141, 291); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 216, 289); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 216, 289, false, false, false, false, true); // cd (w, ch) - Double Click
+selectCodeEditor("chnl_tester.v", 141, 307); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 133, 339); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 304, 329); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 179, 513); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 205, 292); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 205, 292, false, false, false, false, true); // cd (w, ch) - Double Click
+typeControlKey((HResource) null, "chnl_tester.v", 'c'); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 136, 553); // cd (w, ch)
+typeControlKey((HResource) null, "chnl_tester.v", 'v'); // cd (w, ch)
+// Elapsed time: 33 seconds
+selectCodeEditor("chnl_tester.v", 245, 507); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 261, 603); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("chnl_tester.v", 89, 531); // cd (w, ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 14 seconds
+selectCodeEditor("chnl_tester.v", 490, 442); // cd (w, ch)
+typeControlKey((HResource) null, "chnl_tester.v", 'c'); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 499, 437); // cd (w, ch)
+typeControlKey((HResource) null, "chnl_tester.v", 'v'); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 227, 465); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 358, 542); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 216, 573); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 285, 187); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 285, 187, false, false, false, false, true); // cd (w, ch) - Double Click
+typeControlKey((HResource) null, "chnl_tester.v", 'c'); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 125, 582); // cd (w, ch)
+typeControlKey((HResource) null, "chnl_tester.v", 'v'); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 16 seconds
+selectCodeEditor("chnl_tester.v", 368, 512); // cd (w, ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 22 seconds
+selectCodeEditor("chnl_tester.v", 99, 539); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 99, 539, false, false, false, false, true); // cd (w, ch) - Double Click
+selectCodeEditor("chnl_tester.v", 103, 514); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 103, 514, false, false, false, false, true); // cd (w, ch) - Double Click
+typeControlKey((HResource) null, "chnl_tester.v", 'c'); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 136, 541); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 136, 541, false, false, false, false, true); // cd (w, ch) - Double Click
+typeControlKey((HResource) null, "chnl_tester.v", 'v'); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 171, 535); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 370, 481); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("chnl_tester.v", 309, 626); // cd (w, ch)
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectCodeEditor("chnl_tester.v", 225, 519); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 138, 543); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 80, 536); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 80, 536, false, false, false, false, true); // cd (w, ch) - Double Click
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("chnl_tester.v", 274, 570); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 287, 590); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 270, 546); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 292, 472); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 79 seconds
+selectCodeEditor("chnl_tester.v", 229, 351); // cd (w, ch)
+selectCodeEditor("chnl_tester.v", 229, 351, false, false, false, false, true); // cd (w, ch) - Double Click
+selectCodeEditor("chnl_tester.v", 275, 488); // cd (w, ch)
+typeControlKey((HResource) null, "chnl_tester.v", 'c'); // cd (w, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, axi_spi_top_wrapper (axi_spi_top_wrapper.v), KC705_Gen2x8If128 : KC705_Gen2x8If128 (KC705_Gen2x8If128.v)]", 5, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, axi_spi_top_wrapper (axi_spi_top_wrapper.v), KC705_Gen2x8If128 : KC705_Gen2x8If128 (KC705_Gen2x8If128.v)]", 5, true, false, false, false, false, true); // B (D, ch) - Double Click - Node
+// Elapsed time: 19 seconds
+selectCodeEditor("KC705_Gen2x8If128.v", 559, 759); // cd (w, ch)
+typeControlKey((HResource) null, "KC705_Gen2x8If128.v", 'c'); // cd (w, ch)
+typeControlKey((HResource) null, "KC705_Gen2x8If128.v", 'v'); // cd (w, ch)
+typeControlKey(null, null, 'z');
+selectCodeEditor("KC705_Gen2x8If128.v", 318, 775); // cd (w, ch)
+typeControlKey((HResource) null, "KC705_Gen2x8If128.v", 'v'); // cd (w, ch)
+typeControlKey(null, null, 'z');
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "chnl_tester.v", 1); // k (j, ch)
+typeControlKey((HResource) null, "chnl_tester.v", 'c'); // cd (w, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "KC705_Gen2x8If128.v", 2); // k (j, ch)
+typeControlKey((HResource) null, "KC705_Gen2x8If128.v", 'v'); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 517, 560); // cd (w, ch)
+typeControlKey((HResource) null, "KC705_Gen2x8If128.v", 'v'); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 226, 414); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 407, 439); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 397, 462); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 280, 533); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 280, 562); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 270, 581); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 336, 441); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 310, 262); // cd (w, ch)
+// Elapsed time: 18 seconds
+selectCodeEditor("KC705_Gen2x8If128.v", 368, 511); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 330, 512); // cd (w, ch)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("KC705_Gen2x8If128.v", 411, 395); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 226, 268); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 226, 268, false, false, false, false, true); // cd (w, ch) - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("KC705_Gen2x8If128.v", 284, 639); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 283, 637); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 289, 639); // cd (w, ch)
+// Elapsed time: 11 seconds
+selectCodeEditor("KC705_Gen2x8If128.v", 279, 662); // cd (w, ch)
+// Elapsed time: 14 seconds
+selectCodeEditor("KC705_Gen2x8If128.v", 282, 262); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 378, 265); // cd (w, ch)
+typeControlKey((HResource) null, "KC705_Gen2x8If128.v", 'c'); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 385, 660); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 390, 659); // cd (w, ch)
+typeControlKey((HResource) null, "KC705_Gen2x8If128.v", 'v'); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 278, 686); // cd (w, ch)
+typeControlKey((HResource) null, "KC705_Gen2x8If128.v", 'v'); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 438, 802); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 269, 543); // cd (w, ch)
+// Elapsed time: 13 seconds
+selectCodeEditor("KC705_Gen2x8If128.v", 287, 565); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 287, 587); // cd (w, ch)
+// Elapsed time: 19 seconds
+selectCodeEditor("KC705_Gen2x8If128.v", 522, 538); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 411, 696); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 209, 475); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 240, 460); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 192, 486); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 209, 466); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 161, 488); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 188, 237); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 264, 285); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 161, 493); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 227, 461); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 385, 714); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("KC705_Gen2x8If128.v", 502, 265); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 500, 189); // cd (w, ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("KC705_Gen2x8If128.v", 670, 278); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 656, 199); // cd (w, ch)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("KC705_Gen2x8If128.v", 349, 269); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 349, 269, false, false, false, false, true); // cd (w, ch) - Double Click
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("KC705_Gen2x8If128.v", 500, 471); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 465, 512); // cd (w, ch)
+typeControlKey((HResource) null, "KC705_Gen2x8If128.v", 'c'); // cd (w, ch)
+// Elapsed time: 11 seconds
+selectCodeEditor("KC705_Gen2x8If128.v", 555, 512); // cd (w, ch)
+typeControlKey((HResource) null, "KC705_Gen2x8If128.v", 'v'); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 157, 545); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 424, 63); // cd (w, ch)
+typeControlKey((HResource) null, "KC705_Gen2x8If128.v", 'c'); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 110, 558); // cd (w, ch)
+typeControlKey((HResource) null, "KC705_Gen2x8If128.v", 'v'); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 63, 561); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 360, 563); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 360, 563, false, false, false, false, true); // cd (w, ch) - Double Click
+selectCodeEditor("KC705_Gen2x8If128.v", 228, 615); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 228, 615, false, false, false, false, true); // cd (w, ch) - Double Click
+typeControlKey((HResource) null, "KC705_Gen2x8If128.v", 'c'); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 373, 564); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 373, 564, false, false, false, false, true); // cd (w, ch) - Double Click
+typeControlKey((HResource) null, "KC705_Gen2x8If128.v", 'v'); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 476, 566); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 374, 637); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 444, 564); // cd (w, ch)
+// Elapsed time: 12 seconds
+selectCodeEditor("KC705_Gen2x8If128.v", 510, 214); // cd (w, ch)
+typeControlKey((HResource) null, "KC705_Gen2x8If128.v", 'c'); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 66, 585); // cd (w, ch)
+typeControlKey((HResource) null, "KC705_Gen2x8If128.v", 'v'); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 410, 592); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 496, 361); // cd (w, ch)
+typeControlKey((HResource) null, "KC705_Gen2x8If128.v", 'v'); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 62, 388); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 421, 390); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 520, 379); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 614, 509); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 450, 337); // cd (w, ch)
+typeControlKey((HResource) null, "KC705_Gen2x8If128.v", 'c'); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 98, 405); // cd (w, ch)
+typeControlKey((HResource) null, "KC705_Gen2x8If128.v", 'v'); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 184, 483); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 184, 483, false, false, false, false, true); // cd (w, ch) - Double Click
+typeControlKey((HResource) null, "KC705_Gen2x8If128.v", 'c'); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 376, 415); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 376, 415, false, false, false, false, true); // cd (w, ch) - Double Click
+typeControlKey((HResource) null, "KC705_Gen2x8If128.v", 'v'); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 441, 412); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 441, 412, false, false, false, false, true); // cd (w, ch) - Double Click
+selectCodeEditor("KC705_Gen2x8If128.v", 453, 419); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 453, 413); // cd (w, ch)
+typeControlKey((HResource) null, "KC705_Gen2x8If128.v", 'v'); // cd (w, ch)
+typeControlKey(null, null, 'z');
+selectCodeEditor("KC705_Gen2x8If128.v", 415, 414); // cd (w, ch)
+typeControlKey((HResource) null, "KC705_Gen2x8If128.v", 'c'); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 86, 442); // cd (w, ch)
+typeControlKey((HResource) null, "KC705_Gen2x8If128.v", 'v'); // cd (w, ch)
+typeControlKey((HResource) null, "KC705_Gen2x8If128.v", 'v'); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 206, 558); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 206, 558, false, false, false, false, true); // cd (w, ch) - Double Click
+typeControlKey((HResource) null, "KC705_Gen2x8If128.v", 'c'); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 368, 447); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 402, 442); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 369, 443); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 369, 443, false, false, false, false, true); // cd (w, ch) - Double Click
+typeControlKey((HResource) null, "KC705_Gen2x8If128.v", 'v'); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 216, 590); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 216, 590, false, false, false, false, true); // cd (w, ch) - Double Click
+typeControlKey((HResource) null, "KC705_Gen2x8If128.v", 'c'); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 362, 466); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 362, 466, false, false, false, false, true); // cd (w, ch) - Double Click
+selectCodeEditor("KC705_Gen2x8If128.v", 383, 460); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 383, 460, false, false, false, false, true); // cd (w, ch) - Double Click
+typeControlKey((HResource) null, "KC705_Gen2x8If128.v", 'v'); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 427, 546); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 361, 587); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 449, 557); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 153 MB (+2255kb) [00:24:28]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("KC705_Gen2x8If128.v", 444, 388); // cd (w, ch)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("KC705_Gen2x8If128.v", 511, 493); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 20 seconds
+selectCodeEditor("KC705_Gen2x8If128.v", 88, 263); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,052 MB. GUI used memory: 95 MB. Current time: 12/19/19 10:59:55 AM CST
+// [Engine Memory]: 1,099 MB (+15276kb) [00:40:52]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,100 MB. GUI used memory: 90 MB. Current time: 12/19/19 11:01:45 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,100 MB. GUI used memory: 88 MB. Current time: 12/19/19 11:31:46 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,100 MB. GUI used memory: 87 MB. Current time: 12/19/19 12:01:46 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,100 MB. GUI used memory: 87 MB. Current time: 12/19/19 12:31:46 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,100 MB. GUI used memory: 87 MB. Current time: 12/19/19 1:01:46 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,100 MB. GUI used memory: 87 MB. Current time: 12/19/19 1:31:47 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,100 MB. GUI used memory: 87 MB. Current time: 12/19/19 2:01:47 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,100 MB. GUI used memory: 87 MB. Current time: 12/19/19 2:31:47 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,100 MB. GUI used memory: 87 MB. Current time: 12/19/19 3:01:48 PM CST
+// [GUI Memory]: 175 MB (+14962kb) [04:44:36]
+// [GUI Memory]: 186 MB (+1649kb) [04:45:05]
+// [GUI Memory]: 198 MB (+3385kb) [04:45:20]
+// [GUI Memory]: 210 MB (+1632kb) [04:45:35]
+// [GUI Memory]: 222 MB (+1624kb) [04:45:50]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,100 MB. GUI used memory: 87 MB. Current time: 12/19/19 3:31:48 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,100 MB. GUI used memory: 87 MB. Current time: 12/19/19 4:01:48 PM CST
+// Elapsed time: 19504 seconds
+floatView(PAResourceOtoP.PAViews_CODE, "KC705_Gen2x8If128.v"); // aw (aE, ch)
+// PAResourceOtoP.PAViews_CODE: Code: float view
+maximizeFrame(PAResourceOtoP.PAViews_CODE, "KC705_Gen2x8If128.v"); // aw (aE, aG)
+selectCodeEditor("KC705_Gen2x8If128.v", 772, 403); // cd (w, aG)
+// Elapsed time: 754 seconds
+selectCodeEditor("KC705_Gen2x8If128.v", 584, 723); // cd (w, aG)
+// Elapsed time: 17 seconds
+selectCodeEditor("KC705_Gen2x8If128.v", 434, 935); // cd (w, aG)
+selectCodeEditor("KC705_Gen2x8If128.v", 444, 926); // cd (w, aG)
+selectCodeEditor("KC705_Gen2x8If128.v", 457, 872); // cd (w, aG)
+selectCodeEditor("KC705_Gen2x8If128.v", 461, 895); // cd (w, aG)
+selectCodeEditor("KC705_Gen2x8If128.v", 469, 911); // cd (w, aG)
+selectCodeEditor("KC705_Gen2x8If128.v", 486, 936); // cd (w, aG)
+selectCodeEditor("KC705_Gen2x8If128.v", 501, 957); // cd (w, aG)
+selectCodeEditor("KC705_Gen2x8If128.v", 501, 957); // cd (w, aG)
+selectCodeEditor("KC705_Gen2x8If128.v", 524, 936); // cd (w, aG)
+selectCodeEditor("KC705_Gen2x8If128.v", 593, 910); // cd (w, aG)
+selectCodeEditor("KC705_Gen2x8If128.v", 952, 940); // cd (w, aG)
+selectCodeEditor("KC705_Gen2x8If128.v", 948, 964); // cd (w, aG)
+selectCodeEditor("KC705_Gen2x8If128.v", 945, 979); // cd (w, aG)
+selectCodeEditor("KC705_Gen2x8If128.v", 986, 916); // cd (w, aG)
+selectCodeEditor("KC705_Gen2x8If128.v", 986, 937); // cd (w, aG)
+selectCodeEditor("KC705_Gen2x8If128.v", 984, 953); // cd (w, aG)
+selectCodeEditor("KC705_Gen2x8If128.v", 962, 964); // cd (w, aG)
+selectCodeEditor("KC705_Gen2x8If128.v", 975, 936); // cd (w, aG)
+// Elapsed time: 14 seconds
+selectCodeEditor("KC705_Gen2x8If128.v", 992, 564); // cd (w, aG)
+// Elapsed time: 42 seconds
+selectCodeEditor("KC705_Gen2x8If128.v", 1172, 648); // cd (w, aG)
+selectCodeEditor("KC705_Gen2x8If128.v", 810, 860); // cd (w, aG)
+selectCodeEditor("KC705_Gen2x8If128.v", 814, 831); // cd (w, aG)
+// Elapsed time: 11 seconds
+selectCodeEditor("KC705_Gen2x8If128.v", 454, 855); // cd (w, aG)
+selectCodeEditor("KC705_Gen2x8If128.v", 573, 891); // cd (w, aG)
+selectCodeEditor("KC705_Gen2x8If128.v", 586, 909); // cd (w, aG)
+selectCodeEditor("KC705_Gen2x8If128.v", 358, 864); // cd (w, aG)
+selectCodeEditor("KC705_Gen2x8If128.v", 358, 864, false, false, false, false, true); // cd (w, aG) - Double Click
+selectCodeEditor("KC705_Gen2x8If128.v", 342, 838); // cd (w, aG)
+selectCodeEditor("KC705_Gen2x8If128.v", 342, 838, false, false, false, false, true); // cd (w, aG) - Double Click
+selectCodeEditor("KC705_Gen2x8If128.v", 335, 816); // cd (w, aG)
+selectCodeEditor("KC705_Gen2x8If128.v", 335, 816, false, false, false, false, true); // cd (w, aG) - Double Click
+selectCodeEditor("KC705_Gen2x8If128.v", 507, 1084); // cd (w, aG)
+selectCodeEditor("KC705_Gen2x8If128.v", 515, 1051); // cd (w, aG)
+selectCodeEditor("KC705_Gen2x8If128.v", 516, 948); // cd (w, aG)
+// Elapsed time: 23 seconds
+selectCodeEditor("KC705_Gen2x8If128.v", 492, 868); // cd (w, aG)
+selectCodeEditor("KC705_Gen2x8If128.v", 492, 847); // cd (w, aG)
+// Elapsed time: 10 seconds
+unMaximizeFrame(PAResourceOtoP.PAViews_CODE, "KC705_Gen2x8If128.v"); // aw (aE, aG)
+maximizeFrame(PAResourceOtoP.PAViews_CODE, "KC705_Gen2x8If128.v"); // aw (aE, aG)
+unMaximizeFrame(PAResourceOtoP.PAViews_CODE, "KC705_Gen2x8If128.v"); // aw (aE, aG)
+maximizeFrame(PAResourceOtoP.PAViews_CODE, "KC705_Gen2x8If128.v"); // aw (aE, aG)
+// Elapsed time: 16 seconds
+selectCodeEditor("KC705_Gen2x8If128.v", 440, 784); // cd (w, aG)
+// Elapsed time: 13 seconds
+unMaximizeFrame(PAResourceOtoP.PAViews_CODE, "KC705_Gen2x8If128.v"); // aw (aE, aG)
+dockFrame(PAResourceOtoP.PAViews_CODE, "KC705_Gen2x8If128.v"); // aw (aE, aG)
+// PAResourceOtoP.PAViews_CODE: Code: dock view
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "chnl_tester.v", 1); // k (j, ch)
+typeControlKey((HResource) null, "chnl_tester.v", 'c'); // cd (w, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "KC705_Gen2x8If128.v", 2); // k (j, ch)
+typeControlKey((HResource) null, "KC705_Gen2x8If128.v", 'v'); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 62, 613); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 263, 610); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 33, 619); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 202, 577); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 30, 617); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 298, 689); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 241, 571); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 498, 488); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 530, 553); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 481, 636); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 448, 705); // cd (w, ch)
+// Elapsed time: 15 seconds
+selectCodeEditor("KC705_Gen2x8If128.v", 449, 390); // cd (w, ch)
+typeControlKey((HResource) null, "KC705_Gen2x8If128.v", 'v'); // cd (w, ch)
+// Elapsed time: 49 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "KC705_Gen2x8If128.v", 'v'); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 31, 466); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 121, 461); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 121, 461, false, false, false, false, true); // cd (w, ch) - Double Click
+selectCodeEditor("KC705_Gen2x8If128.v", 137, 461); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 244, 466); // cd (w, ch)
+// Elapsed time: 10 seconds
+selectCodeEditor("KC705_Gen2x8If128.v", 451, 486); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 419, 490); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 448, 488); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 273, 480); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 274, 487); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 229, 478); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 31, 515); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 375, 468); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 316, 511); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 291, 531); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 320, 509); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 392, 506); // cd (w, ch)
+// Elapsed time: 11 seconds
+selectCodeEditor("KC705_Gen2x8If128.v", 141, 361); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 200, 360); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 145, 386); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 200, 384); // cd (w, ch)
+// Elapsed time: 11 seconds
+selectCodeEditor("KC705_Gen2x8If128.v", 139, 413); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 206, 418); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 411, 480); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 58, 358); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 215, 357); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 225, 491); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("KC705_Gen2x8If128.v", 526, 360); // cd (w, ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 16 seconds
+selectCodeEditor("KC705_Gen2x8If128.v", 494, 759); // cd (w, ch)
+typeControlKey((HResource) null, "KC705_Gen2x8If128.v", 'c'); // cd (w, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, axi_spi_top_wrapper (axi_spi_top_wrapper.v)]", 2, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, axi_spi_top_wrapper (axi_spi_top_wrapper.v)]", 2, true, false, false, false, false, true); // B (D, ch) - Double Click - Node
+// Elapsed time: 11 seconds
+selectCodeEditor("axi_spi_top_wrapper.v", 218, 136); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 305, 333); // cd (w, ch)
+typeControlKey((HResource) null, "axi_spi_top_wrapper.v", 'v'); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 232, 387); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 327, 388); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 348, 362); // cd (w, ch)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "KC705_Gen2x8If128.v", 2); // k (j, ch)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,112 MB. GUI used memory: 102 MB. Current time: 12/19/19 4:31:49 PM CST
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "axi_spi_top_wrapper.v", 3); // k (j, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "KC705_Gen2x8If128.v", 2); // k (j, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 318, 421); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 87, 439); // cd (w, ch)
+selectCodeEditor("KC705_Gen2x8If128.v", 113, 439); // cd (w, ch)
+typeControlKey((HResource) null, "KC705_Gen2x8If128.v", 'c'); // cd (w, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "axi_spi_top_wrapper.v", 3); // k (j, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 167, 64); // cd (w, ch)
+typeControlKey((HResource) null, "axi_spi_top_wrapper.v", 'v'); // cd (w, ch)
+// Elapsed time: 14 seconds
+selectCodeEditor("axi_spi_top_wrapper.v", 122, 365); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 122, 365, false, false, false, false, true); // cd (w, ch) - Double Click
+typeControlKey((HResource) null, "axi_spi_top_wrapper.v", 'c'); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 95, 561); // cd (w, ch)
+typeControlKey((HResource) null, "axi_spi_top_wrapper.v", 'v'); // cd (w, ch)
+// Elapsed time: 10 seconds
+selectCodeEditor("axi_spi_top_wrapper.v", 279, 563); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 279, 563, false, false, false, false, true); // cd (w, ch) - Double Click
+selectCodeEditor("axi_spi_top_wrapper.v", 327, 562); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 328, 625); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 168, 389); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 355, 538); // cd (w, ch)
+typeControlKey((HResource) null, "axi_spi_top_wrapper.v", 'c'); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 88, 344); // cd (w, ch)
+typeControlKey((HResource) null, "axi_spi_top_wrapper.v", 'v'); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 170, 516); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 169, 565); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 167, 614); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 169, 641); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 169, 665); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 199, 516); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 360, 532); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 198, 513); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 198, 334); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 198, 334, false, false, false, false, true); // cd (w, ch) - Double Click
+selectCodeEditor("axi_spi_top_wrapper.v", 265, 278); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 265, 278, false, false, false, false, true); // cd (w, ch) - Double Click
+typeControlKey((HResource) null, "axi_spi_top_wrapper.v", 'c'); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 175, 512); // cd (w, ch)
+typeControlKey((HResource) null, "axi_spi_top_wrapper.v", 'v'); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 145, 291); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 271, 380); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 306, 142); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 317, 183); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 367, 232); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 402, 265); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 377, 285); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 527, 305); // cd (w, ch)
+// Elapsed time: 14 seconds
+selectCodeEditor("axi_spi_top_wrapper.v", 113, 534); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 213, 435); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 264, 484); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 288, 508); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 232, 539); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 398, 476); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 146, 434); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 146, 434, false, false, false, false, true); // cd (w, ch) - Double Click
+typeControlKey((HResource) null, "axi_spi_top_wrapper.v", 'c'); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 185, 433); // cd (w, ch)
+typeControlKey((HResource) null, "axi_spi_top_wrapper.v", 'v'); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 170, 483); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 170, 483, false, false, false, false, true); // cd (w, ch) - Double Click
+typeControlKey((HResource) null, "axi_spi_top_wrapper.v", 'c'); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 225, 486); // cd (w, ch)
+typeControlKey((HResource) null, "axi_spi_top_wrapper.v", 'v'); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 199, 511); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 199, 511, false, false, false, false, true); // cd (w, ch) - Double Click
+typeControlKey((HResource) null, "axi_spi_top_wrapper.v", 'c'); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 248, 515); // cd (w, ch)
+typeControlKey((HResource) null, "axi_spi_top_wrapper.v", 'v'); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 130, 534); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 130, 534, false, false, false, false, true); // cd (w, ch) - Double Click
+typeControlKey((HResource) null, "axi_spi_top_wrapper.v", 'c'); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 209, 537); // cd (w, ch)
+typeControlKey((HResource) null, "axi_spi_top_wrapper.v", 'v'); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 501, 496); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 417, 537); // cd (w, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "KC705_Gen2x8If128.v", 2); // k (j, ch)
+// Elapsed time: 11 seconds
+selectCodeEditor("KC705_Gen2x8If128.v", 448, 562); // cd (w, ch)
+typeControlKey((HResource) null, "KC705_Gen2x8If128.v", 'c'); // cd (w, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "axi_spi_top_wrapper.v", 3); // k (j, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 216, 443); // cd (w, ch)
+typeControlKey((HResource) null, "axi_spi_top_wrapper.v", 'v'); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 55, 487); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 48, 487); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 185, 458); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("axi_spi_top_wrapper.v", 254, 416); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 318, 334); // cd (w, ch)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("axi_spi_top_wrapper.v", 575, 410); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 508, 551); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 503, 588); // cd (w, ch)
+// Elapsed time: 12 seconds
+selectCodeEditor("axi_spi_top_wrapper.v", 319, 715); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 319, 715, false, false, false, false, true); // cd (w, ch) - Double Click
+typeControlKey((HResource) null, "axi_spi_top_wrapper.v", 'c'); // cd (w, ch)
+selectCodeEditor("axi_spi_top_wrapper.v", 236, 190); // cd (w, ch)
+typeControlKey((HResource) null, "axi_spi_top_wrapper.v", 'v'); // cd (w, ch)
+// Elapsed time: 11 seconds
+selectCodeEditor("axi_spi_top_wrapper.v", 386, 578); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("axi_spi_top_wrapper.v", 242, 320); // cd (w, ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,121 MB. GUI used memory: 102 MB. Current time: 12/19/19 4:35:44 PM CST
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 52 seconds
+selectCodeEditor("axi_spi_top_wrapper.v", 422, 306); // cd (w, ch)
+// Elapsed time: 29 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PCIEBridge (PCIEBridge.bd)]", 3, false); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PCIEBridge (PCIEBridge.bd)]", 3, false); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PCIEBridge (PCIEBridge.bd)]", 3, false, false, false, false, false, true); // B (D, ch) - Double Click
+// bv (ch):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/PCIEBridge/PCIEBridge.bd} 
+dismissDialog("Open Block Design"); // bv (ch)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "axi_spi_top_wrapper.v", 3); // k (j, ch)
+floatView(PAResourceOtoP.PAViews_CODE, "axi_spi_top_wrapper.v"); // aw (aE, ch)
+// PAResourceOtoP.PAViews_CODE: Code: float view
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PCIEBridge (PCIEBridge.bd)]", 3, false); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PCIEBridge (PCIEBridge.bd)]", 3, false, false, false, false, false, true); // B (D, ch) - Double Click
+// bv (ch):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/PCIEBridge/PCIEBridge.bd} 
+dismissDialog("Open Block Design"); // bv (ch)
+floatView(PAResourceOtoP.PAViews_SYSTEM, "Diagram"); // aw (aE, ch)
+// PAResourceOtoP.PAViews_SYSTEM: System: float view
+// Elapsed time: 13 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1091, 629, 1876, 922, false, false, false, true, false); // fI (aw, aG) - Popup Trigger
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_CREATE_PORT, "Create Port..."); // ac (ai, Popup.HeavyWeightWindow)
+// ba (aG): Create Port: addNotify
+// Elapsed time: 45 seconds
+setText(PAResourceAtoD.CreateRSBPortDialog_PORT_NAME, "FIFO_DATA_CLK"); // X (Q, ba)
+selectComboBox(PAResourceAtoD.CreateRSBPortDialog_TYPE, "Clock", 0); // e (Q, ba)
+// Elapsed time: 10 seconds
+setText(PAResourceAtoD.CreateRSBPortDialog_FREQUENCY, "250"); // X (Q, ba)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ba)
+dismissDialog("Create Port"); // ba (aG)
+// Tcl Message: startgroup 
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Command: 'set_property CONFIG.FREQ_HZ 250000000 [get_bd_ports FIFO_DATA_CLK]'
+// Tcl Message: create_bd_port -dir I -type clk FIFO_DATA_CLK 
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: set_property CONFIG.FREQ_HZ 250000000 [get_bd_ports FIFO_DATA_CLK] 
+// Tcl Message: endgroup 
+// Tcl Command: 'set_property location {-258 -329} [get_bd_ports FIFO_DATA_CLK]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {-258 -329} [get_bd_ports FIFO_DATA_CLK] 
+// Tcl Command: 'set_property location {1.5 488 -185} [get_bd_cells axis_data_fifo_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1.5 488 -185} [get_bd_cells axis_data_fifo_0] 
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 680, 482, 1876, 922, false, false, false, true, false); // fI (aw, aG) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_CREATE_PORT, "Create Port..."); // ac (ai, Popup.HeavyWeightWindow)
+// ba (aG): Create Port: addNotify
+// Elapsed time: 10 seconds
+selectCheckBox(PAResourceAtoD.CreateRSBPortDialog_CREATE_VECTOR, "Create vector:", true); // g (Q, ba): TRUE
+// Elapsed time: 15 seconds
+setSpinner(PAResourceAtoD.CreateRSBPortDialog_FROM, "127"); // S (Q, ba)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ba)
+// HOptionPane Error: 'Please enter a valid port name (Vivado)'
+selectButton("PAResourceAtoD.CreateRSBPortDialog_ENTER_VALID_PORT_NAME_OK", "OK"); // JButton (A, H)
+setText(PAResourceAtoD.CreateRSBPortDialog_PORT_NAME, "FIFO_RX_DATA", true); // X (Q, ba)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ba)
+// TclEventType: RSB_ADD_OBJECT
+dismissDialog("Create Port"); // ba (aG)
+// Tcl Message: create_bd_port -dir I -from 127 -to 0 FIFO_RX_DATA 
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 834, 403, 1876, 922, false, false, false, true, false); // fI (aw, aG) - Popup Trigger
+// bv (aG):  Copy Ports : addNotify
+// Tcl Message: startgroup 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_COPY_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: copy_bd_objs /  [get_bd_ports {FIFO_RX_DATA}] 
+// Tcl Command: 'set_property location {-57 -142} [get_bd_ports FIFO_RX_DATA1]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {-57 -142} [get_bd_ports FIFO_RX_DATA1] 
+// Tcl Message: endgroup 
+dismissDialog("Copy Ports"); // bv (aG)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 686, 546, 1876, 922, false, false, false, true, false); // fI (aw, aG) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "External Port Properties..."); // ac (ai, Popup.HeavyWeightWindow)
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+// Elapsed time: 14 seconds
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "FIFO_TX_DATA"); // X (Q, ch)
+// Tcl Command: 'set_property name FIFO_TX_DATA [get_bd_ports FIFO_RX_DATA1]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name FIFO_TX_DATA [get_bd_ports FIFO_RX_DATA1] 
+// ba (aG): Create Port: addNotify
+// Elapsed time: 32 seconds
+setText(PAResourceAtoD.CreateRSBPortDialog_PORT_NAME, "STATUS_rLen"); // X (Q, ba)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ba)
+// TclEventType: RSB_ADD_OBJECT
+dismissDialog("Create Port"); // ba (aG)
+// Tcl Message: create_bd_port -dir I STATUS_rLen 
+// ba (aG): Create Port: addNotify
+setText(PAResourceAtoD.CreateRSBPortDialog_PORT_NAME, "STATUS_rCount"); // X (Q, ba)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ba)
+// TclEventType: RSB_ADD_OBJECT
+dismissDialog("Create Port"); // ba (aG)
+// Tcl Message: create_bd_port -dir I STATUS_rCount 
+// ba (aG): Create Port: addNotify
+setText(PAResourceAtoD.CreateRSBPortDialog_PORT_NAME, "STATUS_rState", true); // X (Q, ba)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ba)
+// TclEventType: RSB_ADD_OBJECT
+dismissDialog("Create Port"); // ba (aG)
+// Tcl Message: create_bd_port -dir I STATUS_rState 
+// Tcl Command: 'set_property location {-52 -228} [get_bd_ports FIFO_DATA_CLK]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {-52 -228} [get_bd_ports FIFO_DATA_CLK] 
+// Tcl Command: 'set_property location {1 490 -257} [get_bd_cells axis_data_fifo_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1 490 -257} [get_bd_cells axis_data_fifo_0] 
+// Tcl Command: 'set_property location {-45 -334} [get_bd_ports STATUS_rCount]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {-45 -334} [get_bd_ports STATUS_rCount] 
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /PCIEBridge 
+// PAResourceOtoP.PAViews_SYSTEM: System: close view
+// Elapsed time: 37 seconds
+closeFrame(PAResourceOtoP.PAViews_SYSTEM, "Diagram"); // aw (aE, aG)
+dockFrame(PAResourceOtoP.PAViews_SYSTEM, "Diagram"); // aw (aE, aG)
+closeView(PAResourceOtoP.PAViews_SYSTEM, "System"); // fI
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PCIEBridge (PCIEBridge.bd)]", 3, false); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PCIEBridge (PCIEBridge.bd)]", 3, false, false, false, false, true, false); // B (D, ch) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_VIEW_INST_TEMPL, "View Instantiation Template"); // ac (ai, ch)
+// Run Command: PAResourceCommand.PACommandNames_VIEW_INST_TEMPL
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: make_wrapper -files [get_files D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/PCIEBridge/PCIEBridge.bd] -fileset [get_filesets sources_1] -inst_template 
+// Tcl Message: ERROR: [BD 41-758] The following clock pins are not connected to a valid clock source:  /axis_data_fifo_0/s_axis_aclk  ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/PCIEBridge/PCIEBridge.bd  
+// Tcl Message: ERROR: [Common 17-39] 'make_wrapper' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'make_wrapper' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'make_wrapper' failed due to earlier errors. (Error Opening Composite File)'
+// a (ch): Critical Messages: addNotify
+selectButton("PAResourceAtoD.CompositeBaseCommandHandler_ERROR_OPENING_COMPOSITE_FILE_OK", "OK"); // JButton (A, G)
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[BD 41-758] The following clock pins are not connected to a valid clock source: . /axis_data_fifo_0/s_axis_aclk", 0); // b (D, a)
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[BD 41-758] The following clock pins are not connected to a valid clock source: . /axis_data_fifo_0/s_axis_aclk", 0, false, false, false, false, true); // b (D, a) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Critical Messages"); // a (ch)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,152 MB. GUI used memory: 100 MB. Current time: 12/19/19 4:41:29 PM CST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PCIEBridge (PCIEBridge.bd)]", 3, false); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PCIEBridge (PCIEBridge.bd)]", 3, false, false, false, false, false, true); // B (D, ch) - Double Click
+// bv (ch):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/PCIEBridge/PCIEBridge.bd} 
+dismissDialog("Open Block Design"); // bv (ch)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: delete_bd_objs [get_bd_cells axis_data_fifo_0] 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /PCIEBridge 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : <D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/PCIEBridge/PCIEBridge.bd>  Wrote  : <D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/PCIEBridge/ui/bd_5ea96d18.ui>  
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.

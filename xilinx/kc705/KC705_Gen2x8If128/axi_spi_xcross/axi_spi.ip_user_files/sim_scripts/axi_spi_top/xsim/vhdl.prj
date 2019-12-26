@@ -1,0 +1,11 @@
+vhdl fifo_generator_v13_2_2  \
+"../../../../axi_spi.srcs/sources_1/bd/axi_spi_top/ipshared/7aff/hdl/fifo_generator_v13_2_rfs.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../bd/axi_spi_top/ip/axi_spi_top_axi_quad_spi_0_0/sim/axi_spi_top_axi_quad_spi_0_0.vhd" \
+"../../../bd/axi_spi_top/ip/axi_spi_top_rst_clk_wiz_0_100M_0/sim/axi_spi_top_rst_clk_wiz_0_100M_0.vhd" \
+"../../../bd/axi_spi_top/ip/axi_spi_top_util_ds_buf_0_0/util_ds_buf.vhd" \
+"../../../bd/axi_spi_top/ip/axi_spi_top_util_ds_buf_0_0/sim/axi_spi_top_util_ds_buf_0_0.vhd" \
+"../../../bd/axi_spi_top/ip/axi_spi_top_dds_compiler_0_0/sim/axi_spi_top_dds_compiler_0_0.vhd" \
+
+nosort

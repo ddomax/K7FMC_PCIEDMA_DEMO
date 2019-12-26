@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-//Date        : Tue May  7 12:18:36 2019
+//Date        : Wed Dec 11 05:37:38 2019
 //Host        : zhatianyics-PC running 64-bit major release  (build 9200)
 //Command     : generate_target axi_spi_top.bd
 //Design      : axi_spi_top
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "axi_spi_top,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=axi_spi_top,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=31,numReposBlks=24,numNonXlnxBlks=0,numHierBlks=7,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=10,numPkgbdBlks=1,bdsource=USER,da_axi4_cnt=6,da_board_cnt=5,da_clkrst_cnt=17,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "axi_spi_top.hwdef" *) 
+(* CORE_GENERATION_INFO = "axi_spi_top,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=axi_spi_top,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=33,numReposBlks=26,numNonXlnxBlks=0,numHierBlks=7,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=11,numPkgbdBlks=1,bdsource=USER,da_axi4_cnt=6,da_board_cnt=5,da_clkrst_cnt=17,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "axi_spi_top.hwdef" *) 
 module axi_spi_top
    (CS,
     GBT_REFCLK_n,
@@ -18,7 +18,9 @@ module axi_spi_top
     MOSI,
     diff_clock_rtl_0_clk_n,
     diff_clock_rtl_0_clk_p,
+    o_data_to_pcie,
     resetn,
+    riffa_rd_clk,
     rx_0_0,
     rx_sync_n,
     rx_sync_p,
@@ -33,7 +35,9 @@ module axi_spi_top
   (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.MOSI DATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.MOSI, LAYERED_METADATA undef" *) inout MOSI;
   (* X_INTERFACE_INFO = "xilinx.com:interface:diff_clock:1.0 diff_clock_rtl_0 CLK_N" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME diff_clock_rtl_0, CAN_DEBUG false, FREQ_HZ 200000000" *) input diff_clock_rtl_0_clk_n;
   (* X_INTERFACE_INFO = "xilinx.com:interface:diff_clock:1.0 diff_clock_rtl_0 CLK_P" *) input diff_clock_rtl_0_clk_p;
+  output [127:0]o_data_to_pcie;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RESETN RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RESETN, POLARITY ACTIVE_LOW" *) input resetn;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.RIFFA_RD_CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.RIFFA_RD_CLK, CLK_DOMAIN axi_spi_top_riffa_rd_clk, FREQ_HZ 100000000, PHASE 0.000" *) input riffa_rd_clk;
   input rx_0_0;
   output [0:0]rx_sync_n;
   output [0:0]rx_sync_p;
@@ -42,6 +46,7 @@ module axi_spi_top
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.SCLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.SCLK, FREQ_HZ 1000000, PHASE 0.000" *) inout sclk;
   output tx_0_0;
 
+  wire [127:0]BridgeToPCIE_0_o_data;
   wire GBT_REFCLK_n_1;
   wire GBT_REFCLK_p_1;
   wire Net;
@@ -106,6 +111,7 @@ module axi_spi_top
   wire diff_clock_rtl_0_1_CLK_P;
   wire err_detector_0_err_flag;
   wire [7:0]err_detector_0_rx_error_hold;
+  wire [13:0]fifo_generator_0_dout;
   wire init_delay_0_o_resetn;
   wire init_delay_1_o_resetn;
   wire inv_0_O;
@@ -186,6 +192,7 @@ module axi_spi_top
   wire [3:0]jtag_axi_0_axi_periph_M01_AXI_WSTRB;
   wire jtag_axi_0_axi_periph_M01_AXI_WVALID;
   wire resetn_1;
+  wire riffa_rd_clk_1;
   wire [0:0]rst_clk_wiz_0_100M_interconnect_aresetn;
   wire [0:0]rst_clk_wiz_0_100M_peripheral_aresetn;
   wire rx_0_0_1;
@@ -202,13 +209,18 @@ module axi_spi_top
   assign GBT_REFCLK_p_1 = GBT_REFCLK_p;
   assign diff_clock_rtl_0_1_CLK_N = diff_clock_rtl_0_clk_n;
   assign diff_clock_rtl_0_1_CLK_P = diff_clock_rtl_0_clk_p;
+  assign o_data_to_pcie[127:0] = BridgeToPCIE_0_o_data;
   assign resetn_1 = resetn;
+  assign riffa_rd_clk_1 = riffa_rd_clk;
   assign rx_0_0_1 = rx_0_0;
   assign rx_sync_n[0] = util_ds_buf_0_OBUF_DS_N;
   assign rx_sync_p[0] = util_ds_buf_0_OBUF_DS_P;
   assign rxn_1 = rxn[1:0];
   assign rxp_1 = rxp[1:0];
   assign tx_0_0 = uart_ila_top_0_tx_0;
+  axi_spi_top_BridgeToPCIE_0_0 BridgeToPCIE_0
+       (.i_data0(fifo_generator_0_dout),
+        .o_data(BridgeToPCIE_0_o_data));
   axi_spi_top_Tgate_0_0 Tgate_0
        (.I(axi_quad_spi_0_io0_o),
         .IO(MOSI),
@@ -336,6 +348,14 @@ module axi_spi_top
         .rx_clk(jesd204_0_rx_core_clk_out),
         .rx_error(jesd204_0_rx_frame_error),
         .rx_error_hold(err_detector_0_rx_error_hold));
+  axi_spi_top_fifo_generator_0_0 fifo_generator_0
+       (.din(data_rearrange_0_adc0_sample0),
+        .dout(fifo_generator_0_dout),
+        .rd_clk(riffa_rd_clk_1),
+        .rd_en(1'b0),
+        .rst(inv_0_O),
+        .wr_clk(jesd204_0_rx_core_clk_out),
+        .wr_en(1'b0));
   axi_spi_top_init_delay_0_0 init_delay_0
        (.clk(clk_wiz_0_clk_out1),
         .done(axi_traffic_gen_0_done),

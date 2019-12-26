@@ -5,6 +5,18 @@
 
 # XDC: D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/constr/KC705_Gen2x8If128.xdc
 
+# Block Designs: bd/PCIEBridge/PCIEBridge.bd
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==PCIEBridge || ORIG_REF_NAME==PCIEBridge} -quiet] -quiet
+
+# IP: bd/PCIEBridge/ip/PCIEBridge_axis_data_fifo_0_0/PCIEBridge_axis_data_fifo_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==PCIEBridge_axis_data_fifo_0_0 || ORIG_REF_NAME==PCIEBridge_axis_data_fifo_0_0} -quiet] -quiet
+
+# IP: bd/PCIEBridge/ip/PCIEBridge_system_ila_0_3/PCIEBridge_system_ila_0_3.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==PCIEBridge_system_ila_0_3 || ORIG_REF_NAME==PCIEBridge_system_ila_0_3} -quiet] -quiet
+
+# IP: bd/PCIEBridge/ip/PCIEBridge_rst_aclk_250M_2/PCIEBridge_rst_aclk_250M_2.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==PCIEBridge_rst_aclk_250M_2 || ORIG_REF_NAME==PCIEBridge_rst_aclk_250M_2} -quiet] -quiet
+
 # Block Designs: bd/axi_spi_top/axi_spi_top.bd
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==axi_spi_top || ORIG_REF_NAME==axi_spi_top} -quiet] -quiet
 
@@ -88,5 +100,7 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==axi_spi_top_fif
 
 # IP: bd/axi_spi_top/ip/axi_spi_top_auto_pc_0/axi_spi_top_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==axi_spi_top_auto_pc_0 || ORIG_REF_NAME==axi_spi_top_auto_pc_0} -quiet] -quiet
+
+# XDC: bd/PCIEBridge/PCIEBridge_ooc.xdc
 
 # XDC: bd/axi_spi_top/axi_spi_top_ooc.xdc

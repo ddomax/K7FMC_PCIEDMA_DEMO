@@ -1,0 +1,65 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 non-TLS-threadsafe
+#  -string -flagsOSRD
+preplace port CHNL_TX_DATA_REN -pg 1 -y 1090 -defaultsOSRD
+preplace port CHNL_RX_CLK -pg 1 -y 760 -defaultsOSRD
+preplace port CHNL_TX_LAST -pg 1 -y 1050 -defaultsOSRD
+preplace port CHNL_TX_ACK -pg 1 -y 1030 -defaultsOSRD
+preplace port CHNL_TX -pg 1 -y 1070 -defaultsOSRD
+preplace port CHNL_RX_DATA_VALID -pg 1 -y 900 -defaultsOSRD
+preplace port CHNL_TX_CLK -pg 1 -y 950 -defaultsOSRD
+preplace port s_axis_aresetn -pg 1 -y 310 -defaultsOSRD
+preplace port S_AXIS -pg 1 -y 280 -defaultsOSRD
+preplace port CHNL_RX_ACK -pg 1 -y 800 -defaultsOSRD
+preplace port RST -pg 1 -y 740 -defaultsOSRD
+preplace port CHNL_TX_DATA_VALID -pg 1 -y 1010 -defaultsOSRD
+preplace port CHNL_RX -pg 1 -y 780 -defaultsOSRD
+preplace port CHNL_RX_DATA_REN -pg 1 -y 920 -defaultsOSRD
+preplace port aclk -pg 1 -y 330 -defaultsOSRD
+preplace port M_AXIS -pg 1 -y 270 -defaultsOSRD
+preplace port CHNL_RX_LAST -pg 1 -y 820 -defaultsOSRD
+preplace portBus CHNL_TX_DATA -pg 1 -y 990 -defaultsOSRD
+preplace portBus CHNL_RX_OFF -pg 1 -y 860 -defaultsOSRD
+preplace portBus STATUS_rCount -pg 1 -y 90 -defaultsOSRD
+preplace portBus STATUS_rLen -pg 1 -y 120 -defaultsOSRD
+preplace portBus CHNL_RX_DATA -pg 1 -y 880 -defaultsOSRD
+preplace portBus STATUS_rState -pg 1 -y 150 -defaultsOSRD
+preplace portBus CHNL_RX_LEN -pg 1 -y 840 -defaultsOSRD
+preplace portBus CHNL_TX_OFF -pg 1 -y 1110 -defaultsOSRD
+preplace portBus CHNL_TX_LEN -pg 1 -y 970 -defaultsOSRD
+preplace inst rst_aclk_250M -pg 1 -lvl 1 -y 550 -defaultsOSRD
+preplace inst system_ila_0 -pg 1 -lvl 2 -y 840 -defaultsOSRD
+preplace inst axis_data_fifo_0 -pg 1 -lvl 1 -y 330 -defaultsOSRD
+preplace netloc CHNL_TX_OFF_1 1 0 2 NJ 1110 N
+preplace netloc axis_data_count 1 1 1 430
+preplace netloc CHNL_RX_LEN_1 1 0 2 NJ 840 300
+preplace netloc CHNL_TX_1 1 0 2 NJ 1070 N
+preplace netloc rst_aclk_250M_peripheral_aresetn 1 1 1 350
+preplace netloc CHNL_TX_LEN_1 1 0 2 NJ 970 N
+preplace netloc STATUS_rState_1 1 0 2 N 150 400
+preplace netloc CHNL_RX_DATA_1 1 0 2 NJ 880 280
+preplace netloc STATUS_rCount_1 1 0 2 N 90 420
+preplace netloc CHNL_RX_OFF_1 1 0 2 NJ 860 290
+preplace netloc CHNL_RX_LAST_1 1 0 2 NJ 820 310
+preplace netloc CHNL_TX_LAST_1 1 0 2 NJ 1050 N
+preplace netloc CHNL_TX_DATA_1 1 0 2 NJ 990 N
+preplace netloc axis_rd_data_count 1 1 1 370
+preplace netloc CHNL_RX_1 1 0 2 NJ 780 330
+preplace netloc CHNL_RX_DATA_VALID_1 1 0 2 NJ 900 270
+preplace netloc S_AXIS_1 1 0 2 -110 240 440
+preplace netloc CHNL_TX_DATA_VALID_1 1 0 2 NJ 1010 N
+preplace netloc axis_wr_data_count 1 1 1 390
+preplace netloc axis_data_fifo_0_M_AXIS 1 1 2 450J 300 720
+preplace netloc RST_1 1 0 2 NJ 740 340
+preplace netloc CHNL_TX_ACK_1 1 0 2 NJ 1030 N
+preplace netloc aclk_1 1 0 2 -130 450 380
+preplace netloc CHNL_RX_ACK_1 1 0 2 NJ 800 320
+preplace netloc CHNL_RX_DATA_REN_1 1 0 2 NJ 920 260
+preplace netloc CHNL_TX_DATA_REN_1 1 0 2 NJ 1090 N
+preplace netloc STATUS_rLen_1 1 0 2 N 120 410
+preplace netloc s_axis_aresetn_1 1 0 2 -120 650 360
+levelinfo -pg 1 -170 90 620 760 -top -730 -bot 1170
+",
+}
+0

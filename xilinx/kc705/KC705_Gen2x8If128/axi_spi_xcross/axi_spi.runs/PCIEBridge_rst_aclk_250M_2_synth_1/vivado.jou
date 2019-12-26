@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sat Dec 21 20:19:47 2019
+# Process ID: 15524
+# Current directory: D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.runs/PCIEBridge_rst_aclk_250M_2_synth_1
+# Command line: vivado.exe -log PCIEBridge_rst_aclk_250M_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PCIEBridge_rst_aclk_250M_2.tcl
+# Log file: D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.runs/PCIEBridge_rst_aclk_250M_2_synth_1/PCIEBridge_rst_aclk_250M_2.vds
+# Journal file: D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.runs/PCIEBridge_rst_aclk_250M_2_synth_1\vivado.jou
+#-----------------------------------------------------------
+source PCIEBridge_rst_aclk_250M_2.tcl -notrace

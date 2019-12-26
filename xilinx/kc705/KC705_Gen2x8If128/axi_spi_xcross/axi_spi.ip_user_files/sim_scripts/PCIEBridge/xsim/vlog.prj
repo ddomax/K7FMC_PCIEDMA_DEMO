@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../bd/PCIEBridge/sim/PCIEBridge.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

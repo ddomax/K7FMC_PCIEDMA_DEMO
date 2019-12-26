@@ -1,0 +1,148 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Thu Dec 19 16:42:33 2019
+# Process ID: 7916
+# Current directory: D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7588 D:\K7_FMC_PCIE\K7FMC_PCIEDMA_DEMO\xilinx\kc705\KC705_Gen2x8If128\axi_spi_xcross\axi_spi.xpr
+# Log file: D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/vivado.log
+# Journal file: D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.xpr
+update_compile_order -fileset sources_1
+open_bd_design {D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/PCIEBridge/PCIEBridge.bd}
+make_wrapper -files [get_files D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/PCIEBridge/PCIEBridge.bd] -fileset [get_filesets sources_1] -inst_template
+update_compile_order -fileset sources_1
+add_files -norecurse D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/new/axi_spi_top.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/new/axi_spi_top.v] -no_script -reset -force -quiet
+remove_files  D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/new/axi_spi_top.v
+update_compile_order -fileset sources_1
+add_files -norecurse D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/new/jesd_adc_part.v
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top jesd_adc_part [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+make_wrapper -files [get_files D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd] -fileset [get_filesets sources_1] -inst_template
+make_wrapper -files [get_files D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd] -fileset [get_filesets sources_1] -inst_template
+make_wrapper -files [get_files D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd] -top
+make_wrapper -files [get_files D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd] -top
+open_bd_design {D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd}
+close_bd_design [get_bd_designs axi_spi_top]
+close_bd_design [get_bd_designs PCIEBridge]
+make_wrapper -files [get_files D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd] -fileset [get_filesets sources_1] -inst_template
+make_wrapper -files [get_files D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/PCIEBridge/PCIEBridge.bd] -fileset [get_filesets sources_1] -inst_template
+make_wrapper -files [get_files D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd] -fileset [get_filesets sources_1] -inst_template
+generate_target all [get_files  D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd]
+export_ip_user_files -of_objects [get_files D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd]
+export_simulation -of_objects [get_files D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd] -directory D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.ip_user_files/sim_scripts -ip_user_files_dir D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.ip_user_files -ipstatic_source_dir D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.cache/compile_simlib/modelsim} {questa=D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.cache/compile_simlib/questa} {riviera=D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.cache/compile_simlib/riviera} {activehdl=D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/hdl/axi_spi_top_wrapper.v] -no_script -reset -force -quiet
+remove_files  D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/hdl/axi_spi_top_wrapper.v
+make_wrapper -files [get_files D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd] -top
+add_files -norecurse D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/hdl/axi_spi_top_wrapper.v
+make_wrapper -files [get_files D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd] -fileset [get_filesets sources_1] -inst_template
+update_compile_order -fileset sources_1
+make_wrapper -files [get_files D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd] -top
+import_files -force -norecurse D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/hdl/axi_spi_top_wrapper.v
+export_ip_user_files -of_objects  [get_files D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/imports/hdl/axi_spi_top_wrapper.v] -no_script -reset -force -quiet
+remove_files  D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/imports/hdl/axi_spi_top_wrapper.v
+file delete -force D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/imports/hdl/axi_spi_top_wrapper.v
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_run synth_1 -name synth_1
+generate_target all [get_files  D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/PCIEBridge/PCIEBridge.bd]
+export_ip_user_files -of_objects [get_files D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/PCIEBridge/PCIEBridge.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/PCIEBridge/PCIEBridge.bd]
+export_simulation -of_objects [get_files D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/PCIEBridge/PCIEBridge.bd] -directory D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.ip_user_files/sim_scripts -ip_user_files_dir D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.ip_user_files -ipstatic_source_dir D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.cache/compile_simlib/modelsim} {questa=D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.cache/compile_simlib/questa} {riviera=D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.cache/compile_simlib/riviera} {activehdl=D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+open_bd_design {D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/PCIEBridge/PCIEBridge.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:system_ila:1.1 system_ila_0
+endgroup
+set_property location {1.5 301 -264} [get_bd_cells system_ila_0]
+delete_bd_objs [get_bd_cells system_ila_0]
+set_property location {80 -223} [get_bd_ports FIFO_DATA_CLK]
+set_property location {-15 -233} [get_bd_ports FIFO_DATA_CLK]
+close [ open D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/new/chnl_moniter.v w ]
+add_files D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/new/chnl_moniter.v
+update_compile_order -fileset sources_1
+open_bd_design {D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/PCIEBridge/PCIEBridge.bd}
+delete_bd_objs [get_bd_ports FIFO_TX_DATA]
+create_bd_cell -type module -reference chnl_moniter chnl_moniter_0
+set_property location {1.5 367 -276} [get_bd_cells chnl_moniter_0]
+set_property location {1 368 -341} [get_bd_cells chnl_moniter_0]
+set_property location {-8 -391} [get_bd_ports STATUS_rCount]
+connect_bd_net [get_bd_ports STATUS_rState] [get_bd_pins chnl_moniter_0/STATUS_rState]
+connect_bd_net [get_bd_ports STATUS_rLen] [get_bd_pins chnl_moniter_0/STATUS_rLen]
+connect_bd_net [get_bd_ports STATUS_rCount] [get_bd_pins chnl_moniter_0/STATUS_rCount]
+set_property location {-14 -326} [get_bd_ports STATUS_rLen]
+set_property location {-13 -352} [get_bd_ports STATUS_rCount]
+set_property location {-20 -388} [get_bd_ports FIFO_DATA_CLK]
+set_property location {-48 -201} [get_bd_ports FIFO_RX_DATA]
+set_property location {-11 -503} [get_bd_ports FIFO_DATA_CLK]
+set_property location {-21 -373} [get_bd_ports FIFO_RX_DATA]
+connect_bd_net [get_bd_ports FIFO_RX_DATA] [get_bd_pins chnl_moniter_0/FIFO_RX_DATA]
+startgroup
+create_bd_port -dir O -from 127 -to 0 FIFO_TX_DATA
+connect_bd_net [get_bd_pins /chnl_moniter_0/FIFO_TX_DATA] [get_bd_ports FIFO_TX_DATA]
+endgroup
+update_module_reference PCIEBridge_chnl_moniter_0_0
+connect_bd_net [get_bd_ports FIFO_DATA_CLK] [get_bd_pins chnl_moniter_0/FIFO_DATA_CLK]
+set_property location {-23 -387} [get_bd_ports FIFO_DATA_CLK]
+update_compile_order -fileset sources_1
+startgroup
+set_property location {-10 -339} [get_bd_ports STATUS_rCount]
+set_property location {-10 -279} [get_bd_ports STATUS_rLen]
+set_property location {-10 -299} [get_bd_ports STATUS_rState]
+set_property location {-10 -359} [get_bd_ports FIFO_RX_DATA]
+set_property location {-10 -379} [get_bd_ports FIFO_DATA_CLK]
+endgroup
+set_property location {-14 -313} [get_bd_ports STATUS_rLen]
+set_property location {-16 -319} [get_bd_ports STATUS_rLen]
+set_property location {-12 -298} [get_bd_ports STATUS_rState]
+save_bd_design
+open_bd_design {D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/PCIEBridge/PCIEBridge.bd}
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_nets {STATUS_rLen_1 STATUS_rState_1 FIFO_DATA_CLK_1 FIFO_RX_DATA_1 STATUS_rCount_1 }]
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_nets {chnl_moniter_0_FIFO_TX_DATA }]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \
+                                                          [get_bd_nets STATUS_rState_1] {PROBE_TYPE "Data and Trigger" CLK_SRC "/FIFO_DATA_CLK" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets STATUS_rLen_1] {PROBE_TYPE "Data and Trigger" CLK_SRC "/FIFO_DATA_CLK" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets STATUS_rCount_1] {PROBE_TYPE "Data and Trigger" CLK_SRC "/FIFO_DATA_CLK" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets FIFO_RX_DATA_1] {PROBE_TYPE "Data and Trigger" CLK_SRC "/FIFO_DATA_CLK" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets chnl_moniter_0_FIFO_TX_DATA] {PROBE_TYPE "Data and Trigger" CLK_SRC "/FIFO_DATA_CLK" SYSTEM_ILA "Auto" } \
+                                                         ]
+endgroup
+startgroup
+set_property HDL_ATTRIBUTE.DEBUG false [get_bd_nets { FIFO_DATA_CLK_1 } ]
+endgroup
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_bd_design {D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/PCIEBridge/PCIEBridge.bd}
+regenerate_bd_layout
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/PCIEBridge/PCIEBridge.bd]
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/K7_FMC_PCIE/K7FMC_PCIEDMA_DEMO/xilinx/kc705/KC705_Gen2x8If128/axi_spi_xcross/axi_spi.srcs/sources_1/bd/axi_spi_top/axi_spi_top.bd]
+refresh_design
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+close_design
+update_module_reference PCIEBridge_chnl_moniter_0_0
+update_module_reference PCIEBridge_chnl_moniter_0_0
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_run impl_1
+open_run synth_1 -name synth_1
